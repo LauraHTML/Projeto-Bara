@@ -8,7 +8,7 @@ export default function Loading() {
     // Simula um carregamento ou espera a janela carregar
     const handleLoad = () => {
       // Pequeno timeout para garantir que a transição seja vista
-      setTimeout(() => setIsLoading(false), 4000); 
+      setTimeout(() => setIsLoading(false), 10000); 
     };
 
     if (document.readyState === 'complete') {
