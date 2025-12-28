@@ -1,7 +1,11 @@
+import localFont from 'next/font/local';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+
+import ClientWrapper from '@/components/clientWrapper/clientWrapper';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,10 +17,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const helvetica = localFont({
+  src: './fonts/Helvetica.ttf',
+  variable: "--font-helvetica", 
+  weight: "100", 
+})
+
+const helveticaBold = localFont({
+  src: './fonts/Helvetica-Bold.ttf',
+  variable: "--font-helvetica-bold", 
+  weight: "900", 
+})
+
 export const metadata = {
   title: {
     default: "Projeto Bará",
-    template: "%s | Projeto Bará", // Em outras páginas, o título fica: "Contato | Projeto Bará"
+    template: "%s | Bará", // Em outras páginas, o título fica: "Contato | Projeto Bará"
   },
   description: "Aqui você coloca um resumo atrativo de até 160 caracteres sobre o que é o Projeto Bará.",
   keywords: ["Oficina escola", "Antirracismo", "Design", "Projeto Bará", "Ensinagem"],
@@ -56,13 +72,15 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${helvetica.className} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ClientWrapper>
+          <Navbar />
+          {children}
+          <Footer />
+        </ClientWrapper> 
       </body>
     </html>
   );

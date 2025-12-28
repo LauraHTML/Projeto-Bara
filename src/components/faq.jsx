@@ -14,17 +14,12 @@ const faq = [
   {
     question: "O que é Bara?",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "É um instrumento de letramento e aprendizado para educadores e alunos a fim de questionar a presença do racismo na sociedade.",
   },
   {
     question: "Para quem é o projeto?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
-  },
-  {
-    question: "Bará na sua escola",
-    answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "Para educadores que buscam transmitir o poder transformador",
   },
   {
     question: "Invista na Bará",
@@ -37,7 +32,7 @@ const FAQ = () => {
   const [value, setValue] = useState();
 
   return (
-    <div className="bg-accent min-h-auto w-full flex items-center justify-center px-6 py-12">
+    <div className="bg-primary min-h-auto w-full flex items-center justify-center px-6 py-12">
       <div className="w-full">
 
         <div className="mt-6 w-full grid gap-x-10 py-7 px-10">
@@ -53,7 +48,7 @@ const FAQ = () => {
                   <AccordionPrimitive.Trigger
                     className={cn(
                       "flex flex-1 items-center justify-between py-4 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
-                      "text-start text-lg"
+                      "text-start text-lg text-accent-foreground"
                     )}>
                     {question}
                     <PlusIcon

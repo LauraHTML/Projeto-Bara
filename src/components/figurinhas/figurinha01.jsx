@@ -1,9 +1,9 @@
+import Image from "next/image";
+
 export function Figurinha01() {
     return(<>
-    <div className="absolute rounded-inherit top-40 right-20 bottom-0 left-2r0">
-    <div className="bg-secondary rounded-full h-30 w-30 p-4">
-        <small>figurinha</small>
-    </div>
+    <div className="absolute rounded-inherit top-40 right-20 bottom-0 shadow-lg hidden md:block">
+        <Image src={"/rostinhos/adesivoRosto.png"} width={250} height={250} alt="Adesivo oficina" /> 
     </div>
     </>)
 }

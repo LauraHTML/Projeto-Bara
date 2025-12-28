@@ -5,6 +5,7 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion"
 import { ChevronDownIcon } from "lucide-react"
 
 import { cn } from "@/lib/utils"
+import Image from "next/image";
 
 function Accordion({
   ...props
@@ -54,9 +55,12 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+      className="relative data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm h-55" 
       {...props}>
-      <div className={cn("pt-0 pb-4", className)}>{children}</div>
+      <div className={cn("pt-0 pb-4 z-10" , className)}>{children}</div>
+      <div className="absolute right-10 z-0 pointer-events-none">
+          <Image src={"/aya-vermelho-2.png"} width={200} height={200} alt="Adinkra" />
+        </div>
     </AccordionPrimitive.Content>
   );
 }

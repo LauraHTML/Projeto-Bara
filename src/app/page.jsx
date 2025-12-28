@@ -1,50 +1,48 @@
 "use client"
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import { gsap } from "gsap";
+import { useState, useEffect } from 'react';
 
 import Image from "next/image";
 import Hero from "@/components/hero"
 import FAQ from "@/components/faq";
 import Bara from "@/components/h1Bara";
 import Sobre from "@/components/sobre/sobre";
+import AplicacaoEscola from '@/components/conteudoOnline/aplicacao';
+import Loader from '@/components/loader';
+import Teste from '@/components/teste/teste';
 
 import { Figurinha01 } from "@/components/figurinhas/figurinha01";
 import { Figurinha02 } from "@/components/figurinhas/figurinha02";
 import { Figurinha03 } from "@/components/figurinhas/figurinha03";
 
-import AnimacaoLinha from "@/components/animações/linha/animaçãoLinha";
-import { SobreCard } from "@/components/cardSobre/cardSobre";
-
-import IntroAnimation from "@/components/introAnimation";
+import AnimacaoLinha from "@/components/animações/animaçãoLinha"
 
 export default function Home() {
 
   return (
-    <div className="flex w-full relative z-0">
-      <main className="flex min-h-screen w-full flex-col items-center sm:items-start">
-        <div className="bg-primary centralizar w-full h-screen py-10 overflow-hidden sticky top-0">
-          <div className="centralizar flex-col transition-all duration-700 w-md text-wrap">
+    <>
+      <main className="flex min-h-screen w-full flex-col items-center sm:items-start overflow-hidden">
+        <div className="bg-primary centralizar w-full h-full overflow-visible sticky top-0 z-10">
+          <div className="centralizar flex-col transition-all duration-700 w-md text-wrap overflow-hidden mt-10">
             <Bara />
-            <div className="h-[25rem]">
-              
-            </div>
+          </div>
+          <div className="static rounded-inherit shadow-2xl">
+            <Figurinha01 />
           </div>
           <div className="static rounded-inherit">
-            <Figurinha01 />
             <Figurinha02 />
+          </div>
+          <div className="static rounded-inherit">
             <Figurinha03 />
           </div>
         </div>
-        <section className="sticky top-0 w-full bg-secondary z-10 mt-40">
+        <section className="flex flex-col  sticky top-0 w-full bg-secondary z-20">
+          <Hero />
           <Sobre />
-          <div className="">
-            <Hero />
-          </div>
+          <Teste />
           <FAQ />
-          <AnimacaoLinha />
+          <AplicacaoEscola />
         </section>
       </main>
-    </div>
+    </>
   );
 }

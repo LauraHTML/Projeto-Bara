@@ -2,40 +2,57 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div
-        className=" w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12">
-        <div>
-          <Badge variant="secondary" className="rounded-full py-1 border-border" asChild>
-            <Link href="#">
-              Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
-            </Link>
-          </Badge>
-          <h1
-            className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-[-0.035em]">
-            Customized Shadcn UI Blocks & Components
-          </h1>
-          <p className="mt-6 max-w-[60ch] sm:text-lg text-foreground/80">
-            Explore a collection of Shadcn UI blocks and components, ready to
-            preview and copy. Streamline your development workflow with
-            easy-to-implement examples.
-          </p>
-          <div className="mt-12 flex items-center gap-4">
-            <Button size="lg" className="rounded-full text-base">
-              Get Started <ArrowUpRight className="h-5! w-5!" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full text-base shadow-none">
-              <CirclePlay className="h-5! w-5!" /> Watch Demo
-            </Button>
+    <div className="h-fit flex flex-col justify-center items-center gap-4 mt-4">
+      <div className="p-3 text-center centralizar flex-row">
+        <h1 className="text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold text-background">
+          Design para a educação
+        </h1>
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-5 items-center">
+        <div className="flex flex-row md:flex-col w-fit">
+          <Image src={"/rostinhos/menina.png"} width={130} height={130} alt="Rosto menina" className="ml-0 md:ml-10" />
+          <Image src={"/rostinhos/menino.png"} width={120} height={130} alt="Rosto menino" />
+          <Image src={"/rostinhos/rostinho.png"} width={130} height={130} alt="Rosto menina" className="ml-0 md:ml-10" />
+        </div>
+
+        <div className="bg-accent flex flex-col md:flex-row h-3xl w-full justify-between items-center rounded-lg p-12 relative overflow-hidden -4" >
+          <div className="p-4 w-fit md:w-lg flex items-center text-wrap flex-wrap">
+            <p className="m-2 text-2xl text-background text-wrap z-20">
+              A oficina Bará busca dar voz e visibilidade para a comunidade preta através de atividades práticas e interação, no qual o aluno se torna principal agente em seu aprendizado.
+            </p>
+          </div>
+
+          <div className="p-4 z-11">
+            <Carousel>
+              <CarouselContent>
+                <CarouselItem><Image src={"/fotos/criancas-desenhando.png"} width={350} height={300} alt="Foto das crianças desenhando na oficina" /></CarouselItem>
+                <CarouselItem><Image src={"/fotos/sala-de-aula.png"} width={350} height={300} alt="Foto das crianças na sala de aula" /></CarouselItem>
+                <CarouselItem><Image src={"/fotos/meninos-desenho.png"} width={350} height={300} alt="Foto das crianças desenhando na oficina" /></CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+          <div className="absolute -top-10 left-10 z-0 pointer-events-none">
+            <Image src={"/mata-masie.png"} width={200} height={200} alt="Adinkra" />
+          </div>
+          <div className="absolute -bottom-10 -right-10 z-0 pointer-events-none">
+            <Image src={"/mata-masie.png"} width={200} height={200} alt="Adinkra" />
           </div>
         </div>
-        <div className="w-full aspect-video bg-accent rounded-xl" />
       </div>
     </div>
   );
