@@ -42,7 +42,7 @@ export default function BaraNaSuaEscola() {
         <div className="w-full max-w-2xl flex flex-col gap-6 items-center">
 
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-2xl font-bold text-secondary">Método duplo diamante</h1>
+            <h1 className="fonte-titulo text-2xl font-bold text-secondary">Método duplo diamante</h1>
             <p>Conheça sobre a estratégia de design principal para o desenvolvimento da oficina</p>
           </div>
           <Tabs defaultValue="descobrir" className="w-full">

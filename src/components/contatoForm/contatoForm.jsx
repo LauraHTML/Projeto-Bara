@@ -57,7 +57,7 @@ export default function Contato() {
 
     return (
         <div className='w-full max-w-lg m-0 p-5'>
-            <h1>Entre em Contato</h1>
+            <h1 className='fonte-titulo'>Entre em Contato</h1>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 <div className="space-y-2">

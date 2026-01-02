@@ -68,7 +68,7 @@ export default function CarrosselComPaginacao() {
 
   return (
     <div className="mx-auto max-w-xl absolute top-40 sm:top-10 sm:left-70 left-40 flex flex-col items-center justify-center gap-3 sm:gap-7">
-      <h1 className="text-2xl font-bold text-secondary">Resultados da oficina</h1>
+      <h1 className="fonte-titulo text-2xl font-bold text-secondary">Resultados da oficina</h1>
       <Carousel setApi={setApi} className="w-xs sm:w-xl max-w-xl">
         <CarouselContent>
           {imagens.map((imagem) => (

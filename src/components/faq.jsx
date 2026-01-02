@@ -50,13 +50,13 @@ const FAQ = () => {
                       "flex flex-1 items-center justify-between py-4 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
                       "text-start text-lg text-accent-foreground"
                     )}>
-                    {question}
+                    <p>{question}</p>
                     <PlusIcon
                       className="h-5 w-5 shrink-0 text-accent-foreground transition-transform duration-200" />
                   </AccordionPrimitive.Trigger>
                 </AccordionPrimitive.Header>
                 <AccordionContent className="text-base text-accent-foreground text-pretty">
-                  {answer}
+                 <p>{answer}</p> 
                 </AccordionContent>
               </AccordionItem>
             ))}

@@ -56,12 +56,24 @@ export default function Contato() {
 
 
   return (
-   <div className='w-full max-w-lg m-0 p-5'>
-            <h1>Entre em Contato</h1>
+   <div className="min-h-screen bg-secondary p-4 sm:p-8">
+      <div className="max-w-4xl mx-auto">
 
+        <div className="text-center">
+          <div className="text-5xl font-bold text-white mb-3">
+            <h1 className='fonte-titulo'>Entre em Contato</h1>
+            <p className="text-xl text-white">
+            Tem alguma dúvida sobre nossa oficina? Manda uma mensagem!
+          </p>
+          </div>
+          </div>
+
+          <div className="bg-white rounded-2xl shadow-2xl p-8 sm:p-12">
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 <div className="space-y-2">
-                    <FieldLabel htmlFor="name">Nome:</FieldLabel>
+                    <FieldLabel className={"flex items-center text-lg font-semibold text-gray-700 mb-2"} htmlFor="name">
+                      <UserRound className="w-5 h-5 mr-2 text-primary" />
+                      Nome:</FieldLabel>
                     <Input
                         id="name"
                         name="name"
@@ -72,7 +84,9 @@ export default function Contato() {
                 </div>              
 
                 <div>
-                    <FieldLabel htmlFor="email">Seu email:</FieldLabel>
+                    <FieldLabel htmlFor="email" className={"flex items-center text-lg font-semibold text-gray-700 mb-2"}>
+                      <Mail className="w-5 h-5 mr-2 text-primary" />
+                      Seu email:</FieldLabel>
                     <Input
                         id="emailUser"
                         name="emailUser"
@@ -84,7 +98,9 @@ export default function Contato() {
                 </div>
 
                 <div>
-                    <FieldLabel htmlFor="message">Mensagem:</FieldLabel>
+                    <FieldLabel htmlFor="message" className={"flex items-center text-lg font-semibold text-gray-700 mb-2"}>
+                      <MessageSquare className="w-5 h-5 mr-2 text-primary" />
+                      Mensagem:</FieldLabel>
                     <Textarea
                         id="message"
                         name="message"
@@ -100,6 +116,9 @@ export default function Contato() {
 
                 {status === 'error' && (<p style={{ color: 'red' }}>✗ Erro ao enviar email. Tente novamente.</p>)}
             </form>
+          </div>
+
+        </div>
         </div>
   );
 }

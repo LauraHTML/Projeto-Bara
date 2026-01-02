@@ -14,9 +14,9 @@ import {
 
 export default function Hero() {
   return (
-    <div className="h-fit flex flex-col justify-center items-center gap-4 mt-4">
+    <div className="h-fit flex flex-col justify-center items-center gap-4 mt-4 w-full">
       <div className="p-3 text-center centralizar flex-row">
-        <h1 className="text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold text-background">
+        <h1 className="fonte-titulo text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold text-background">
           Design para a educação
         </h1>
       </div>
@@ -28,14 +28,14 @@ export default function Hero() {
           <Image src={"/rostinhos/rostinho.png"} width={130} height={130} alt="Rosto menina" className="ml-0 md:ml-10" />
         </div>
 
-        <div className="bg-accent flex flex-col md:flex-row h-3xl w-full justify-between items-center rounded-lg p-12 relative overflow-hidden -4" >
-          <div className="p-4 w-fit md:w-lg flex items-center text-wrap flex-wrap">
-            <p className="m-2 text-2xl text-background text-wrap z-20">
+        <div className="bg-accent flex flex-col md:flex-row h-3xl w-3xl justify-between items-center rounded-lg p-12 relative overflow-hidden -4" >
+          <div className="p-4 w-full md:w-1/2 flex items-center text-wrap flex-wrap">
+            <p className="m-2 text-black text-2xl text-wrap z-20">
               A oficina Bará busca dar voz e visibilidade para a comunidade preta através de atividades práticas e interação, no qual o aluno se torna principal agente em seu aprendizado.
             </p>
           </div>
 
-          <div className="p-4 z-11">
+          <div className="p-4 z-11 w-full md:w-1/2">
             <Carousel>
               <CarouselContent>
                 <CarouselItem><Image src={"/fotos/criancas-desenhando.png"} width={350} height={300} alt="Foto das crianças desenhando na oficina" /></CarouselItem>

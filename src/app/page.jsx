@@ -6,13 +6,14 @@ import Hero from "@/components/hero"
 import FAQ from "@/components/faq";
 import Bara from "@/components/h1Bara";
 import Sobre from "@/components/sobre/sobre";
-import AplicacaoEscola from '@/components/conteudoOnline/aplicacao';
+import AplicacaoEscola from '@/components/aplicacao/aplicacao';
 import Loader from '@/components/loader';
 import Teste from '@/components/teste/teste';
 
 import { Figurinha01 } from "@/components/figurinhas/figurinha01";
 import { Figurinha02 } from "@/components/figurinhas/figurinha02";
 import { Figurinha03 } from "@/components/figurinhas/figurinha03";
+import { Figurinha04 } from "@/components/figurinhas/figurinha04";
 
 import AnimacaoLinha from "@/components/animações/animaçãoLinha"
 
@@ -34,13 +35,15 @@ export default function Home() {
           <div className="static rounded-inherit">
             <Figurinha03 />
           </div>
+          <div className="static rounded-inherit">
+            <Figurinha04 />
+          </div>
         </div>
         <section className="flex flex-col  sticky top-0 w-full bg-secondary z-20">
           <Hero />
           <Sobre />
-          <Teste />
-          <FAQ />
           <AplicacaoEscola />
+          <FAQ />
         </section>
       </main>
     </>

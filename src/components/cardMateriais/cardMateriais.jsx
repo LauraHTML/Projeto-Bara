@@ -61,7 +61,7 @@ export default function CardMateriais() {
         <div className="container mx-auto py-12 px-4 md:px-6">
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col items-center pb-8">
-                    <h1 className="text-2xl md:text-2xl font-bold text-center mb-2 text-secondary">
+                    <h1 className="fonte-titulo text-2xl md:text-2xl font-bold text-center mb-2 text-secondary">
                         Materiais Necessários para a
                     </h1>
                     <Image src={"/titulos/oficina.png"} width={300} height={150} alt={"Oficina"} />

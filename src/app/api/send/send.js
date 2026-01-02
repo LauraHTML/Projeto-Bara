@@ -13,10 +13,10 @@ export default async function handler(req, res) {
   try {
 
     // Pegar os dados do body
-    const { firstName, email, message } = req.body;
+    const { firstName, emailUser, message } = req.body;
 
     //Validar dados
-    if (!firstName || !email || !message) {
+    if (!firstName || !emailUser || !message) {
       console.log('Dados inválidos');
       return res.status(400).json({ error: 'Todos os campos são obrigatórios!' });
     }
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
       from: 'Bará <onboarding@resend.dev>',
       to: 'laura.senai03@gmail.com',
       subject: 'Nova mensagem de contato da oficina Bará',
-      react: EmailTemplate({ firstName, message, email }),
+      react: EmailTemplate({ firstName, message, emailUser }),
     });
 
     if (error) {

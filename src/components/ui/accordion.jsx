@@ -55,12 +55,9 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"
-      className="relative data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm h-55" 
+      className="relative data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm h-fit" 
       {...props}>
       <div className={cn("pt-0 pb-4 z-10" , className)}>{children}</div>
-      <div className="absolute right-10 z-0 pointer-events-none">
-          <Image src={"/aya-vermelho-2.png"} width={200} height={200} alt="Adinkra" />
-        </div>
     </AccordionPrimitive.Content>
   );
 }

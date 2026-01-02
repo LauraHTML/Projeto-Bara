@@ -19,20 +19,26 @@ const geistMono = Geist_Mono({
 
 const helvetica = localFont({
   src: './fonts/Helvetica.ttf',
-  variable: "--font-helvetica", 
-  weight: "100", 
+  variable: "--font-helvetica",
+  weight: "500",
+})
+
+const ruina = localFont({
+  src: './fonts/Ruina.ttf',
+  variable: "--font-ruina",
+  weight: "100",
 })
 
 const helveticaBold = localFont({
   src: './fonts/Helvetica-Bold.ttf',
-  variable: "--font-helvetica-bold", 
-  weight: "900", 
+  variable: "--font-helvetica-bold",
+  weight: "900",
 })
 
 export const metadata = {
   title: {
     default: "Projeto Bará",
-    template: "%s | Bará", // Em outras páginas, o título fica: "Contato | Projeto Bará"
+    template: "%s | Bará",
   },
   description: "Aqui você coloca um resumo atrativo de até 160 caracteres sobre o que é o Projeto Bará.",
   keywords: ["Oficina escola", "Antirracismo", "Design", "Projeto Bará", "Ensinagem"],
@@ -40,13 +46,13 @@ export const metadata = {
   openGraph: {
     title: "Conheça o Projeto Bará",
     description: "Uma breve descrição que convence a pessoa a clicar no link.",
-    url: "https://projetobara.vercel.app", 
+    url: "https://projetobara.vercel.app",
     siteName: "Projeto Bará",
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg", // Uma imagem que você coloca na pasta 'public'
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Preview do Projeto Bará",
@@ -57,30 +63,30 @@ export const metadata = {
     card: "summary_large_image",
     title: "Projeto Bará",
     description: "Descrição curta para o Twitter.",
-    images: ["/og-image.jpg"], // Mesma imagem do Open Graph
+    images: ["/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png", // Ícone para quando salvam o site na tela do iPhone
+    apple: "/apple-touch-icon.png",
   },
 };
 
 export const viewport = {
-  themeColor: '#000000', // Cor da barra do navegador no mobile
+  themeColor: '#000000',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <body
-        className={`${geistSans.variable} ${helvetica.className} antialiased`}
+        className={`${helvetica.className} ${helveticaBold.className} ${ruina.className} antialiased`}
       >
         <ClientWrapper>
           <Navbar />
           {children}
           <Footer />
-        </ClientWrapper> 
+        </ClientWrapper>
       </body>
     </html>
   );

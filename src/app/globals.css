@@ -1,6 +1,24 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: 'Ruina';
+  src: url('./fonts/Ruina.ttf') format('truetype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/Helvetica.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: 900;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @utility centralizar {
@@ -74,6 +92,9 @@
   --shadow-opacity: var(--shadow-opacity);
   --color-shadow-color: var(--shadow-color);
   --color-destructive-foreground: var(--destructive-foreground);
+
+  --fonte-titulo: var(--font-ruina), serif;
+  --fonte-texto: var(--font-helvetica), sans-serif;
 }
 
 :root {
@@ -113,6 +134,8 @@
   --font-sans: Plus Jakarta Sans, sans-serif;
   --font-serif: Lora, serif;
   --font-mono: IBM Plex Mono, monospace;
+  --fonte-titulo: var(--font-ruina), serif;
+  --fonte-texto: var(--font-helvetica), sans-serif;
   --shadow-color: hsl(0 0% 0%);
   --shadow-opacity: 0;
   --shadow-blur: 0px;
@@ -191,9 +214,20 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
+    font-family: 'Helvetica', sans-serif;
   }
-  
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Ruina', serif;
+  }
+
 }

@@ -9,10 +9,10 @@ export async function POST(request) {
     //Pegar os dados enviados
     const body = await request.json();
     
-    const { firstName, email, message } = body;
+    const { firstName, emailUser, message } = body;
 
     //Validar dados
-    if (!firstName || !email || !message) {
+    if (!firstName || !emailUser || !message) {
       console.log('Dados inválidos');
       return NextResponse.json(
         { error: 'Todos os campos são obrigatórios' }, 
@@ -24,7 +24,7 @@ export async function POST(request) {
       from: 'Quimex <onboarding@resend.dev>',
       to: 'laura.senai03@gmail.com',
       subject: 'Nova mensagem de contato da Oficina Bará',
-      react: EmailTemplate({ firstName, message, email}),
+      react: EmailTemplate({ firstName, message, emailUser}),
     });
 
     if (error) {
