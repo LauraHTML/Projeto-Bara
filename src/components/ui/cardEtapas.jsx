@@ -28,7 +28,7 @@ function CardHeader({
     <div
       data-slot="card-header"
       className={cn(
-        "@container/card-header z-20 grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
+        "@container/card-header z-20 h-20 items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
         className
       )}
       {...props} />
@@ -78,7 +78,7 @@ function CardContent({
   className,
   ...props
 }) {
-  return (<div data-slot="card-content" className={cn("px-6 w-fit md:w-xl text-wrap", className)} {...props} />);
+  return (<div data-slot="card-content" className={cn("px-6 w-fit text-wrap", className)} {...props} />);
 }
 
 function CardFooter({

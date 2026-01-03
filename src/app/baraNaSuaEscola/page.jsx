@@ -42,16 +42,33 @@ export default function BaraNaSuaEscola() {
         <div className="w-full max-w-2xl flex flex-col gap-6 items-center">
 
           <div className="flex flex-col items-center text-center">
-            <h1 className="fonte-titulo text-2xl font-bold text-secondary">Método duplo diamante</h1>
+            <h1 className="fonte-titulo text-6xl font-bold text-secondary">Método duplo diamante</h1>
             <p>Conheça sobre a estratégia de design principal para o desenvolvimento da oficina</p>
           </div>
           <Tabs defaultValue="descobrir" className="w-full">
             <TabsList >
+              <TabsTrigger value="oquee">O que é</TabsTrigger>
               <TabsTrigger value="descobrir">Descobrir</TabsTrigger>
               <TabsTrigger value="definir">Definir</TabsTrigger>
               <TabsTrigger value="desenvolver">Desenvolver</TabsTrigger>
               <TabsTrigger value="entregar">Entregar</TabsTrigger>
             </TabsList>
+
+            <TabsContent value="oquee" className="w-full">
+              <Card className="relative overflow-hidden">
+                <CardHeader>
+                  <CardDescription>introdução</CardDescription>
+                  <CardTitle>Duplo Diamante</CardTitle>
+                </CardHeader>
+                <CardContent className="grid gap-6">
+                  <div className="h-xl flex-wrap py-3 z-20">
+                    <p className="text-wrap">
+                      O método do Duplo Diamante é uma estrutura do Pensamento de Design que organiza o processo de investigação e criação em momentos de abrir e fechar o pensamento, ajudando a compreender melhor um problema e a desenvolver soluções mais conscientes e adequadas à realidade.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </TabsContent>
 
             <TabsContent value="descobrir" className="w-full">
               <Card className="relative overflow-hidden">
@@ -61,7 +78,7 @@ export default function BaraNaSuaEscola() {
                 </CardHeader>
                 <CardContent className="grid gap-6">
                   <div className="h-xl py-3 z-20">
-                    <p className="text-xl">
+                    <p>
                       O objetivo dessa etapa é a construção da base do projeto através da pesquisa e compreensão do problema apresentado.
                     </p>
                   </div>
@@ -81,7 +98,7 @@ export default function BaraNaSuaEscola() {
                 </CardHeader>
                 <CardContent className="grid gap-6">
                   <div className="h-xl py-3 z-20">
-                    <p className="text-xl text-wrap">
+                    <p>
                       Atenção à caminhos
                       específicos e
                       estratégicos tornando
@@ -97,7 +114,7 @@ export default function BaraNaSuaEscola() {
             </TabsContent>
 
             <TabsContent value="desenvolver">
-              <Card>
+              <Card className="relative overflow-hidden">
                 <CardHeader>
                   <CardDescription>
                     etapa 3
@@ -106,7 +123,7 @@ export default function BaraNaSuaEscola() {
                 </CardHeader>
                 <CardContent className="grid gap-6">
                   <div className="py-3 z-20">
-                    <p className="text-xl">
+                    <p>
                       Geração de soluções
                       e ideias através de
                       estratégias de criação.
@@ -122,7 +139,7 @@ export default function BaraNaSuaEscola() {
             </TabsContent>
 
             <TabsContent value="entregar">
-              <Card>
+              <Card className="relative overflow-hidden">
                 <CardHeader>
                   <CardDescription>
                     etapa 4
@@ -131,7 +148,7 @@ export default function BaraNaSuaEscola() {
                 </CardHeader>
                 <CardContent className="grid gap-6">
                   <div className="bg--foreground h-xl py-3 z-20">
-                    <p className="text-xl">
+                    <p>
                       Compartilhamento
                       das descobertas e
                       apresentação das
@@ -154,7 +171,7 @@ export default function BaraNaSuaEscola() {
         <CardMateriais />
       </section>
       <section className="w-full min-h-full flex-col centralizar md:flex-row m-4 gap-10 ">
-          <MateriaisGraficos />
+        <MateriaisGraficos />
       </section>
       <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row gap-10 ">
         <div className="bg-[url(/textura-papel.png)] bg-cover sm:contain bg-center bg-no-repeat sm:w-6xl w-[40rem] h-[40rem] relative m-4">

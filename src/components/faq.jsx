@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
@@ -12,19 +13,19 @@ import { useState } from "react";
 
 const faq = [
   {
-    question: "O que é Bara?",
-    answer:
-      "É um instrumento de letramento e aprendizado para educadores e alunos a fim de questionar a presença do racismo na sociedade.",
+    pergunta: "O que é Bara?",
+    resposta:
+      "É um instrumento de letramento e aprendizado para educadores e alunos a fim de perguntaar a presença do racismo na sociedade.",
   },
   {
-    question: "Para quem é o projeto?",
-    answer:
+    pergunta: "Para quem é o projeto?",
+    resposta:
       "Para educadores que buscam transmitir o poder transformador",
   },
   {
-    question: "Invista na Bará",
-    answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+    pergunta: <Link href={"/invistaNaBara"}>Invista na Bará</Link>,
+    resposta:
+      "",
   }
 ];
 
@@ -42,21 +43,21 @@ const FAQ = () => {
             className="w-full"
             value={value}
             onValueChange={setValue}>
-            {faq.slice(0, 5).map(({ question, answer }, index) => (
-              <AccordionItem key={question} value={`question-${index}`}>
+            {faq.slice(0, 5).map(({ pergunta, resposta }, index) => (
+              <AccordionItem key={pergunta} value={`pergunta-${index}`}>
                 <AccordionPrimitive.Header className="flex">
                   <AccordionPrimitive.Trigger
                     className={cn(
                       "flex flex-1 items-center justify-between py-4 font-semibold transition-all hover:underline [&[data-state=open]>svg]:rotate-45",
                       "text-start text-lg text-accent-foreground"
                     )}>
-                    <p>{question}</p>
+                    <p>{pergunta}</p>
                     <PlusIcon
                       className="h-5 w-5 shrink-0 text-accent-foreground transition-transform duration-200" />
                   </AccordionPrimitive.Trigger>
                 </AccordionPrimitive.Header>
                 <AccordionContent className="text-base text-accent-foreground text-pretty">
-                 <p>{answer}</p> 
+                 <p>{resposta}</p> 
                 </AccordionContent>
               </AccordionItem>
             ))}

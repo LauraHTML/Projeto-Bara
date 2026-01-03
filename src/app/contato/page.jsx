@@ -62,8 +62,8 @@ export default function Contato() {
         <div className="text-center">
           <div className="text-5xl font-bold text-white mb-3">
             <h1 className='fonte-titulo'>Entre em Contato</h1>
-            <p className="text-xl text-white">
-            Tem alguma dúvida sobre nossa oficina? Manda uma mensagem!
+            <p className="text-xl text-white font-normal">
+            Deseja aplicar o projeto na sua escola, tem dúvidas, sugestões ou quer apoiar financeiramente? Entre em contato:
           </p>
           </div>
           </div>

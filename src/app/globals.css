@@ -10,13 +10,7 @@
 @font-face {
   font-family: 'Helvetica';
   src: url('./fonts/Helvetica.ttf') format('truetype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Helvetica';
-  src: url('./fonts/Helvetica-Bold.ttf') format('truetype');
-  font-weight: 900;
+  font-weight: 300;
 }
 
 @custom-variant dark (&:is(.dark *));

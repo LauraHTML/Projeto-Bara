@@ -22,13 +22,17 @@ const footerSections = [
         href: "/",
       },
       {
-        title: "Sua Escola",
+        title: "Aplique na sua escola",
         href: "/baraNaSuaEscola",
       },
       {
         title: "Fale Conosco",
         href: "/contato",
-      }
+      },
+      {
+        title: "Invista",
+        href: "/invistaNaBara",
+      },
     ],
   }
 ];

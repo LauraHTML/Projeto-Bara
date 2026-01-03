@@ -30,9 +30,9 @@ const ruina = localFont({
 })
 
 const helveticaBold = localFont({
-  src: './fonts/Helvetica-Bold.ttf',
+  src: './fonts/Helvetica.ttf',
   variable: "--font-helvetica-bold",
-  weight: "900",
+  weight: "500",
 })
 
 export const metadata = {
