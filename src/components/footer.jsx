@@ -16,8 +16,12 @@ import { Logo } from "@/components/logo";
 
 const footerSections = [
   {
-    title: "Product",
+    title: "Navegação",
     links: [
+      {
+        title: "Fale Conosco",
+        href: "/contato",
+      },
       {
         title: "Conheça",
         href: "/",
@@ -26,10 +30,7 @@ const footerSections = [
         title: "Aplique na sua escola",
         href: "/baraNaSuaEscola",
       },
-      {
-        title: "Fale Conosco",
-        href: "/contato",
-      },
+      
       {
         title: "Invista",
         href: "/invistaNaBara",
