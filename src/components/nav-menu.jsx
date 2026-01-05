@@ -1,10 +1,4 @@
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+// nav-menu.jsx - VERSÃO SIMPLIFICADA
 import Link from "next/link";
 
 const navSections = [
@@ -31,24 +25,28 @@ const navSections = [
   }
 ];
 
-export const NavMenu = (props) => (
-  <>
-    {navSections.map(({ title, links }) => (
-      <NavigationMenu key={title} {...props}>
-        <NavigationMenuList className="data-[orientation=vertical]:-ms-2 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
+export const NavMenu = ({ className, orientation = "horizontal" }) => {
+  const isVertical = orientation === "vertical";
+  
+  return (
+    <nav className={className}>
+      {navSections.map(({ title, links }) => (
+        <ul 
+          key={title}
+          className={`flex gap-1 ${isVertical ? 'flex-col items-start' : 'items-center'}`}
+        >
           {links.map(({ title, href }) => (
-            <NavigationMenuItem key={title} className=" rounded-md m-0">
-              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                <Link href={href} className="text-background">
-                  {title}
-                </Link>
-              </NavigationMenuLink>
-
-            </NavigationMenuItem>
+            <li key={title}>
+              <Link 
+                href={href}
+                className="inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-background hover:bg-primary-foreground/10 transition-colors"
+              >
+                {title}
+              </Link>
+            </li>
           ))}
-        </NavigationMenuList>
-      </NavigationMenu>
-    ))}
-  </>
-
-);
+        </ul>
+      ))}
+    </nav>
+  );
+};
