@@ -22,7 +22,7 @@ export async function POST(request) {
     console.log('Enviando email:');
     const { data, error } = await resend.emails.send({
       from: 'Bará <onboarding@resend.dev>',
-      to: 'laura.senai03@gmail.com',
+      to: 'baraeduca@gmail.com',
       subject: 'Nova mensagem de contato da Oficina Bará',
       react: EmailTemplate({ firstName, message, emailUser}),
     });

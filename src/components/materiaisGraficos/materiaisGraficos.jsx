@@ -15,7 +15,7 @@ export default function MateriaisGraficos(){
           </div>
           <div>
             <Link href={"https://drive.google.com/drive/folders/1W8phWaLBqueTx5SCivkmd18au2lSDDcc?usp=sharing"} target="_blank" rel="noopener noreferrer">
-            <Button>Acessar arquivos</Button>
+            <Button variant="CTA" >Acessar arquivos</Button>
             </Link>
           </div>
         </div>

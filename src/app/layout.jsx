@@ -6,7 +6,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 import ClientWrapper from '@/components/clientWrapper/clientWrapper';
-
+// teste
 const helvetica = localFont({
   src: './fonts/Helvetica.ttf',
   variable: "--font-helvetica",

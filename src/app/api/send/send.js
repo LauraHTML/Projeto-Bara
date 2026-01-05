@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     // Enviando email
     const { data, error } = await resend.emails.send({
       from: 'Bará <onboarding@resend.dev>',
-      to: 'laura.senai03@gmail.com',
+      to: 'baraeduca@gmail.com',
       subject: 'Nova mensagem de contato da oficina Bará',
       react: EmailTemplate({ firstName, message, emailUser }),
     });

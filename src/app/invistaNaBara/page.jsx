@@ -16,7 +16,7 @@ export default function InvistaNaBara(){
             <h1 className="text-4xl">Invista na Bará</h1>
             <p>Existem algumas formas que você pode apoiar a Bará. Entre em contato conosco para saber mais</p>
             <Link href={"/contato"}>
-            <Button>Entre em contato</Button>
+            <Button variant="CTA" >Entre em contato</Button>
             </Link>
             
         </header>

@@ -9,7 +9,7 @@ export default function AplicacaoEscola(){
         <Image src={"/titulos/design-educacao.png"} alt="Design + educação" height={400}  width={600} className="-2xl" />
         {/* <h1 className="text-2xl font-bold text-secondary">Ensinar exige curiosidade</h1> */}
         <p className="fonte-titulo text-2xl text-center text-secondary font-bold">Veja como aplicar a oficina em sua sala de aula</p>
-        <Button>
+        <Button variant="CTA" size={"lg"}>
             <Link href={"/baraNaSuaEscola"}>
             <p>Quero aplicar</p>
             </Link>
