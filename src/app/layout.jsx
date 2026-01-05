@@ -30,6 +30,10 @@ export const metadata = {
     default: "Projeto Bará",
     template: "%s | Bará",
   },
+  verification: {
+    google: 'uivpAWlCCxXr5E_xD52nhHivh0P7_OzCbMynuiaDqEI',
+  },
+  
   description: "Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na educação infantil, com foco na construção de práticas antirracistas. A partir do Pensamento de Design, o projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de formação.",
   keywords: ["Oficina escola", "Antirracismo", "Design", "Projeto Bará", "Ensinagem"],
   authors: [{ name: "Luiza Sampaio Neves", url: "https://www.linkedin.com/in/luiza-sampaio-0808/" }],
