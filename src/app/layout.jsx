@@ -72,11 +72,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${helvetica.className} ${helveticaBold.className} ${ruina.className} antialiased`}
       >
-        <ClientWrapper>
           <Navbar />
           {children}
           <Footer />
-        </ClientWrapper>
       </body>
     </html>
   );
