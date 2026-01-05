@@ -30,7 +30,7 @@ export default function BaraNaSuaEscola() {
     <main className="relative overflow-hidden flex flex-col gap-5">
       <section className="min-h-screen w-full flex-col centralizar md:flex-row md:gap-10 gap-3">
         <div className="flex flex-col items-start gap-3 w-md">
-          <Image src={"/educacao-luta.png"} alt="foto da turma" height={500} width={500} className="rounded-2xl" />
+          <Image src={"/titulos/educacao-luta.png"} alt="Educação e luta antirracista" height={500} width={500} className="rounded-2xl" />
           <p className="ml-10 p-3">A oficina Bará propõe uma abordagem prática e interativa  para a aplicação do Pensamento de Design no meio educacional debatendo o antirracismo</p>
         </div>
         <div className="mt-10">

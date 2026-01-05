@@ -4,7 +4,7 @@ import { ArrowDown } from "lucide-react"
 export function SobreCard({ titulo, descricao, margemTitulo, corFundo, fotinho, corBorda }) {
     return (<>
         <div className="flex flex-col md:flex-row w-fit transition duration-300 hover:-translate-y-1 hover:scale-100">
-            <div className="card-sobre w-fit z-11">
+            <div className="card-sobre w-fit z-10">
                 <div className={`${corFundo} p-4 pb-0 w-fit flex flex-row gap-4 items-center ${margemTitulo}`}>
                     <h1 className="fonte-titulo text-2xl font-bold">{titulo}</h1>
                 </div>

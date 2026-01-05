@@ -35,7 +35,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="p-4 z-11 w-full md:w-1/2">
+          <div className="p-4 z-10 w-full md:w-1/2">
             <Carousel>
               <CarouselContent>
                 <CarouselItem><Image src={"/fotos/criancas-desenhando.png"} width={550} height={500} alt="Foto das crianças desenhando na oficina" /></CarouselItem>

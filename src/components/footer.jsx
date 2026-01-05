@@ -59,9 +59,8 @@ const Footer = () => {
                   {links.map(({ title, href }) => (
                     <li key={title} className="hover:bg-accent px-3 py-2 rounded-md m-0">
                       <Link href={href} className="text-background">
-  {/* Se title não existir, vai escrever "VAZIO" em vermelho */}
-  {title ? title : <span style={{color: 'red'}}>TEXTO VAZIO</span>}
-</Link>
+                        {title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
