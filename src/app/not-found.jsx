@@ -8,7 +8,7 @@ export default function NotFound() {
         <div className='centralizar flex-col gap-5 mt-10'>
             <h2 className='text-6xl'>OOPS...</h2>
             <p className='text-center'>Essa página não existe, vamos voltar para a página inicial.</p>
-            <Button variant="CTA" >
+            <Button variant="CTA" size={"lg"}>
             <Link href="/">Voltar para página inicial</Link>
             </Button>
         </div>

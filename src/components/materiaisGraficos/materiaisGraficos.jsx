@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 export default function MateriaisGraficos(){
     return(<>
 
-     <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row p-4 gap-10">
+     <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row p-4 pb-0 gap-10">
         <div className="w-full max-w-2xl flex flex-col gap-6 items-center">
 
           <div className="flex flex-col items-center text-center gap-5">
@@ -15,7 +15,7 @@ export default function MateriaisGraficos(){
           </div>
           <div>
             <Link href={"https://drive.google.com/drive/folders/1W8phWaLBqueTx5SCivkmd18au2lSDDcc?usp=sharing"} target="_blank" rel="noopener noreferrer">
-            <Button variant="CTA" >Acessar arquivos</Button>
+            <Button variant="CTA" size={"lg"}>Acessar arquivos</Button>
             </Link>
           </div>
         </div>
