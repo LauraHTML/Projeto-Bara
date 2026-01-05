@@ -18,10 +18,7 @@ const footerSections = [
   {
     title: "Navegação",
     links: [
-      {
-        title: "Fale Conosco",
-        href: "/contato",
-      },
+      
       {
         title: "Conheça",
         href: "/",
@@ -30,7 +27,10 @@ const footerSections = [
         title: "Aplique na sua escola",
         href: "/baraNaSuaEscola",
       },
-      
+      {
+        title: "Fale Conosco",
+        href: "/contato",
+      },
       {
         title: "Invista",
         href: "/invistaNaBara",

@@ -9,7 +9,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="h-16 bg-primary sticky top-0 z-40 shadow-md">
-      <div className="h-full flex items-center justify-between max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="h-full flex items-center justify-between max-w-(--breakpoint-4xl) mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-12">
           <Link href={"/"}>
             <Logo />
@@ -19,10 +19,10 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           
           {/* Desktop Menu */}
-          <NavMenu className="hidden md:block" />
+          <NavMenu className="hidden lg:block" />
 
           {/* Mobile Menu */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <NavigationSheet />
           </div>
         </div>
