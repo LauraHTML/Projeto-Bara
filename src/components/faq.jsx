@@ -15,12 +15,12 @@ const faq = [
   {
     pergunta: "O que é Bara?",
     resposta:
-      "É um instrumento de letramento e aprendizado para educadores e alunos a fim de perguntaar a presença do racismo na sociedade.",
+      "Bará é um projeto que investiga o uso do design como ferramenta de transformação social na educação infantil, com foco na construção de práticas antirracistas. A partir da metodologia do Design Thinking, foi desenvolvida uma oficina estruturada nas etapas de descobrir, definir, desenvolver e entregar, que utiliza atividades lúdicas, recursos visuais e a construção de personagens para abordar temas como identidade, diversidade e convivência de forma acessível às crianças.",
   },
   {
     pergunta: "Para quem é o projeto?",
     resposta:
-      "Para educadores que buscam transmitir o poder transformador",
+      "O projeto é direcionado a professores da educação infantil que buscam apoio prático para trabalhar a educação antirracista em sala de aula, oferecendo materiais, referências e metodologias que facilitam a aplicação da Lei 10.639/03 no cotidiano escolar. Para os alunos, o projeto cria experiências educativas acessíveis, lúdicas e significativas, que valorizam a cultura afro-brasileira e estimulam o diálogo, a empatia e o pensamento crítico desde a infância.",
   },
   {
     pergunta: <Link href={"/invistaNaBara"}>Invista na Bará</Link>,

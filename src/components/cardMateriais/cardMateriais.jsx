@@ -61,13 +61,13 @@ export default function CardMateriais() {
         <div className="container mx-auto py-12 px-4 md:px-6">
             <div className="max-w-5xl mx-auto">
                 <div className="flex flex-col items-center pb-8">
-                    <h1 className="fonte-titulo text-2xl md:text-2xl font-bold text-center mb-2 text-secondary">
+                    <h1 className="fonte-titulo text-2xl md:text-2xl font-bold text-center text-primary">
                         Materiais Necessários para a
                     </h1>
                     <Image src={"/titulos/oficina.png"} width={300} height={150} alt={"Oficina"} />
-                    <h2 className="text-xl text-scondary text-center mx-auto">
+                    <p className="text-xl text-scondary text-center mx-auto">
                         Selecione a etapa da oficina para ver os materiais necessários
-                    </h2>
+                    </p>
                 </div>
 
 
@@ -93,35 +93,52 @@ export default function CardMateriais() {
 
                     {etapas.map((etapa) => (
                         <TabsContent key={etapa.id} value={etapa.id} className="mt-8">
-                            <Carousel
-                                opts={{
-                                    align: "start",
-                                    loop: true,
-                                }}
-                                className="w-full max-w-4xl mx-auto"
-                            >
-                                <CarouselContent className="-ml-2 md:-ml-4">
-                                    {etapa.materiais.map((material) => (
-                                        <CarouselItem
-                                            key={material.id}
-                                            className="md:pl-2 md:basis-1/2 lg:basis-1/3 flex-1"
-                                        >
-                                            <div className="flex flex-col h-full w-full">
-                                                <Card className="h-full w-full bg-card/80 backdrop-blur-sm shadow-xl items-center md:items-start hover:shadow-2xl hover:border-primary/30 border-0 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-500 group flex flex-col">
-                                                    <CardTitle className="text-lg font-bold leading-tight group-hover:text-primary transition-colors w-full text-center px-4 pt-4 flex-shrink-0">
-                                                        {material.nome}
-                                                    </CardTitle>
-                                                    <CardContent className="p-4 centralizar flex-col w-100 md:w-80 flex-1 overflow-hidden bg-accent rounded-xl">
-                                                        <Image src={material.imagem} width={material.tamanho} height={material.tamanho} alt={material.altImagem} className="max-w-full h-auto object-contain" />
-                                                    </CardContent>
-                                                </Card>
-                                            </div>
-                                        </CarouselItem>
-                                    ))}
-                                </CarouselContent>
-                                <CarouselPrevious className="h-14 w-14 bg-background/90 backdrop-blur-sm border border-border/50 shadow-lg hover:shadow-xl ml-4" />
-                                <CarouselNext className="h-14 w-14 bg-background/90 backdrop-blur-sm border border-border/50 shadow-lg hover:shadow-xl mr-4" />
-                            </Carousel>
+                            {/* Carrossel para mobile e tablet */}
+                            <div className="lg:hidden">
+                                <Carousel
+                                    opts={{
+                                        align: "start",
+                                        loop: true,
+                                    }}
+                                    className="w-full max-w-4xl mx-auto"
+                                >
+                                    <CarouselContent className="-ml-2 md:-ml-4">
+                                        {etapa.materiais.map((material) => (
+                                            <CarouselItem
+                                                key={material.id}
+                                                className="md:pl-2 md:basis-1/2 flex-1"
+                                            >
+                                                <div className="flex flex-col h-full w-full">
+                                                    <Card className="h-full w-full min-h-96 bg-card/80 backdrop-blur-sm shadow-xl items-center md:items-start hover:shadow-2xl hover:border-primary/30 border-0 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-500 group flex flex-col">
+                                                        <CardTitle className="text-lg font-bold leading-tight group-hover:text-primary transition-colors w-full text-center px-4 pt-4 flex-shrink-0">
+                                                            {material.nome}
+                                                        </CardTitle>
+                                                        <CardContent className="p-4 centralizar flex-col w-100 md:w-80 flex-1 overflow-hidden bg-accent rounded-xl min-h-64">
+                                                            <Image src={material.imagem} width={material.tamanho} height={material.tamanho} alt={material.altImagem} className="max-w-full h-auto object-contain" />
+                                                        </CardContent>
+                                                    </Card>
+                                                </div>
+                                            </CarouselItem>
+                                        ))}
+                                    </CarouselContent>
+                                    <CarouselPrevious className="h-14 w-14 bg-background/90 backdrop-blur-sm border border-border/50 shadow-lg hover:shadow-xl ml-4" />
+                                    <CarouselNext className="h-14 w-14 bg-background/90 backdrop-blur-sm border border-border/50 shadow-lg hover:shadow-xl mr-4" />
+                                </Carousel>
+                            </div>
+
+                            {/* Grid para desktop */}
+                            <div className="hidden lg:grid lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                                {etapa.materiais.map((material) => (
+                                    <Card key={material.id} className="h-full min-h-96 bg-card/80 backdrop-blur-sm shadow-xl items-center hover:shadow-2xl hover:border-primary/30 border-0 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-500 group flex flex-col">
+                                        <CardTitle className="text-lg font-bold leading-tight group-hover:text-primary transition-colors w-full text-center px-4 pt-4 flex-shrink-0">
+                                            {material.nome}
+                                        </CardTitle>
+                                        <CardContent className="p-4 centralizar flex-col flex-1 overflow-hidden bg-accent rounded-xl min-h-64">
+                                            <Image src={material.imagem} width={material.tamanho} height={material.tamanho} alt={material.altImagem} className="max-w-full h-auto object-contain" />
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                            </div>
                         </TabsContent>
                     ))}
                 </Tabs>

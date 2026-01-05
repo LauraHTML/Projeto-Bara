@@ -25,8 +25,7 @@ export function Metodo() {
             <CardHeader>
               <CardTitle>Account</CardTitle>
               <CardDescription>
-                Make changes to your account here. Click save when you&apos;re
-                done.
+                Saiba mais sobre o método duplo diamante utilizado na oficina
               </CardDescription>
             </CardHeader>
             <CardContent className="grid gap-6">

@@ -50,13 +50,13 @@ export default function CarrosselComPaginacao() {
       id: 3,
       caminho: "/fotos/desenhos-etapas-02.png",
       altImagem: "Desenho da etapa dois desenhado por uma aluna",
-      tamanho: "320"
+      tamanho: "550"
     },
     {
       id: 4,
       caminho: "/fotos/desenhos-etapas-01.png",
       altImagem: "Desenho da etapa um desenhado por uma aluna",
-      tamanho: "320"
+      tamanho: "550"
     },
     {
       id: 5,
@@ -67,14 +67,14 @@ export default function CarrosselComPaginacao() {
   ]
 
   return (
-    <div className="mx-auto max-w-xl absolute top-40 sm:top-10 sm:left-70 left-40 flex flex-col items-center justify-center gap-3 sm:gap-7">
-      <h1 className="fonte-titulo text-2xl font-bold text-secondary">Resultados da oficina</h1>
-      <Carousel setApi={setApi} className="w-xs sm:w-xl max-w-xl">
+    <div className="mx-auto max-w-xl absolute md:top-40 top-10 left-70 md:left-40 flex flex-col items-center justify-center gap-3 sm:gap-7">
+      <h1 className="fonte-titulo text-center md:text-6xl text-4xl font-bold text-secondary">Resultados da oficina</h1>
+      <Carousel setApi={setApi} className="md:w-xl w-100">
         <CarouselContent>
           {imagens.map((imagem) => (
             <CarouselItem key={imagem.id}>
-              <Card className={"h-[15rem] sm:h-[30rem] w-xs sm:w-xl bg-transparent p-3"}>
-                <CardContent className="flex aspect-video items-center justify-center p-6">
+              <Card className={"bg-transparent p-3 w-full h-fit"}>
+                <CardContent className="flex h-30 items-center justify-center p-6">
                   <Image src={imagem.caminho} width={imagem.tamanho} height={imagem.tamanho} alt={imagem.altImagem} className="" />
                 </CardContent>
               </Card>

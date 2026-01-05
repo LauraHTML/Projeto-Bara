@@ -134,7 +134,7 @@ function CarouselItem({
       aria-roledescription="slide"
       data-slot="carousel-item"
       className={cn(
-        "max-w-fit shrink-0 grow-0 basis-full",
+        "max-w-full shrink-0 grow-0 basis-full",
         orientation === "horizontal" ? "pl-0" : "pt-4",
         className
       )}

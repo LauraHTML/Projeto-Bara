@@ -18,12 +18,12 @@ import Image from "next/image";
 export default function Sobre() {
   return (
     <>
-      <section className="centralizar md:h-lvh h-fit flex-row w-full mt-5 relative overflow-hidden">
-        <div className="aspect-550/720 w-full max-w-6xl bg-[url(/papel.png)] bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center p-12 shadow-xl">
+      <section className="centralizar md:h-[60rem] h-screen flex-row w-full relative overflow-hidden">
+        <div className="w-full h-[60rem] max-w-6xl bg-[url(/papel-dobrado.jpg)] bg-cover md:bg-contain bg-center bg-no-repeat flex flex-col items-center justify-center shadow-xl p-4">
           <Lapis />
-          <div className="md:w-lg w-40 max-w-[30rem] text-center">
+          <div className="md:w-lg w-xs max-w-[30rem] text-center">
             {/* <Image src="/educacao.png" width={500} height={500} alt="O design e a educação para escolas antirracistas" /> */}
-            <p className="fonte-titulo text-sm md:text-4xl font-bold text-accent"> Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na educação infantil, com foco na construção de práticas antirracistas. A partir do Pensamento de Design, o projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de formação.</p>
+            <p className="fonte-titulo text-2xl md:text-3xl font-bold text-accent"> Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na educação infantil, com foco na construção de práticas antirracistas. A partir do Pensamento de Design, o projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de formação.</p>
           </div>
           <div className="">
             <Canetinha />

@@ -25,7 +25,7 @@ function CardHeader({
     <div
       data-slot="cards-header"
       className={cn(
-        "@items-start w-fit [.border-b]:pb-6",
+        "@items-start  [.border-b]:pb-6",
         className
       )}
       {...props} />

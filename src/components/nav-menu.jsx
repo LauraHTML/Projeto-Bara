@@ -28,7 +28,7 @@ export const NavMenu = (props) => (
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <Link href="/invitaNaBara">Invista</Link>
+          <Link href="/invistaNaBara">Invista</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>

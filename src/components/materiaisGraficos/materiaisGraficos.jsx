@@ -1,4 +1,6 @@
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function MateriaisGraficos(){
     return(<>
@@ -8,12 +10,13 @@ export default function MateriaisGraficos(){
 
           <div className="flex flex-col items-center text-center gap-5">
             <Image src={"/titulos/materiais-graficos.png"} width={600} height={400} alt={"Materiais gráficos"} className="max-w-full h-auto object-contain" />
-            <h1 className="text-6xl text-primary">Materiais gráficos</h1>
             <p className="fonte-titulo text-2xl font-normal">Os materiais gráficos são parte essencial para a realização da oficina, com eles os alunos serão colocados em posição de designers.</p>
             <p className="text-xl">Acesse os arquivos disponíveis para a impressão:</p>
           </div>
           <div>
-            <Image src={"/drive-oficina.png"} width={250} height={250} alt="QR code para acessar o drive da oficina" />
+            <Link href={"https://drive.google.com/drive/folders/1W8phWaLBqueTx5SCivkmd18au2lSDDcc?usp=sharing"} target="_blank" rel="noopener noreferrer">
+            <Button>Acessar arquivos</Button>
+            </Link>
           </div>
         </div>
       </section>

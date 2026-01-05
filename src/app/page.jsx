@@ -39,12 +39,12 @@ export default function Home() {
             <Figurinha04 />
           </div>
         </div>
-        <section className="flex flex-col  sticky top-0 w-full bg-secondary z-20">
+        <section className="flex flex-col gap-10 sticky top-0 w-full bg-secondary z-20">
           <Hero />
           <Sobre />
           <AplicacaoEscola />
-          <FAQ />
         </section>
+        <FAQ />
       </main>
     </>
   );

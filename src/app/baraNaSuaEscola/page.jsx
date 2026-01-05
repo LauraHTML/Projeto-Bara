@@ -42,10 +42,10 @@ export default function BaraNaSuaEscola() {
         <div className="w-full max-w-2xl flex flex-col gap-6 items-center">
 
           <div className="flex flex-col items-center text-center">
-            <h1 className="fonte-titulo text-6xl font-bold text-secondary">Método duplo diamante</h1>
+            <h1 className="fonte-titulo text-6xl font-bold text-primary">Método duplo diamante</h1>
             <p>Conheça sobre a estratégia de design principal para o desenvolvimento da oficina</p>
           </div>
-          <Tabs defaultValue="descobrir" className="w-full">
+          <Tabs defaultValue="oquee" className="w-full">
             <TabsList >
               <TabsTrigger value="oquee">O que é</TabsTrigger>
               <TabsTrigger value="descobrir">Descobrir</TabsTrigger>
@@ -61,7 +61,7 @@ export default function BaraNaSuaEscola() {
                   <CardTitle>Duplo Diamante</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-6">
-                  <div className="h-xl flex-wrap py-3 z-20">
+                  <div className="flex-wrap py-3 z-20">
                     <p className="text-wrap">
                       O método do Duplo Diamante é uma estrutura do Pensamento de Design que organiza o processo de investigação e criação em momentos de abrir e fechar o pensamento, ajudando a compreender melhor um problema e a desenvolver soluções mais conscientes e adequadas à realidade.
                     </p>
@@ -77,7 +77,7 @@ export default function BaraNaSuaEscola() {
                   <CardTitle>Descobrir</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-6">
-                  <div className="h-xl py-3 z-20">
+                  <div className="py-3 z-20">
                     <p>
                       O objetivo dessa etapa é a construção da base do projeto através da pesquisa e compreensão do problema apresentado.
                     </p>
@@ -97,7 +97,7 @@ export default function BaraNaSuaEscola() {
                   <CardTitle>Definir</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-6">
-                  <div className="h-xl py-3 z-20">
+                  <div className="py-3 z-20">
                     <p>
                       Atenção à caminhos
                       específicos e
@@ -147,7 +147,7 @@ export default function BaraNaSuaEscola() {
                   <CardTitle>Entregar</CardTitle>
                 </CardHeader>
                 <CardContent className="grid gap-6">
-                  <div className="bg--foreground h-xl py-3 z-20">
+                  <div className="bg--foreground py-3 z-20">
                     <p>
                       Compartilhamento
                       das descobertas e
@@ -174,7 +174,7 @@ export default function BaraNaSuaEscola() {
         <MateriaisGraficos />
       </section>
       <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row gap-10 ">
-        <div className="bg-[url(/textura-papel.png)] bg-cover sm:contain bg-center bg-no-repeat sm:w-6xl w-[40rem] h-[40rem] relative m-4">
+        <div className="bg-[url(/textura-papel.png)] md:bg-cover contain bg-center bg-no-repeat w-6xl md:w-[40rem] h-[40rem] relative m-4">
           <CarrosselComPaginacao />
         </div>
       </section>

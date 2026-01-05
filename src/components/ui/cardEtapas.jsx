@@ -78,7 +78,7 @@ function CardContent({
   className,
   ...props
 }) {
-  return (<div data-slot="card-content" className={cn("px-6 w-fit text-wrap", className)} {...props} />);
+  return (<div data-slot="card-content" className={cn("px-6 w-full h-full text-wrap", className)} {...props} />);
 }
 
 function CardFooter({
