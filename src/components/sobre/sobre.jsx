@@ -23,7 +23,7 @@ export default function Sobre() {
           <Lapis />
           <div className="md:w-3xl w-xs text-center text-wrap balance">
             {/* <Image src="/educacao.png" width={500} height={500} alt="O design e a educação para escolas antirracistas" /> */}
-            <p className="fonte-titulo text-2xl md:text-3xl font-light text-foreground"> Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na educação infantil, com foco na construção de práticas antirracistas. A partir do Pensamento de Design, o projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de formação.</p>
+            <p className="fonte-titulo text-2xl md:text-2xl font-light text-foreground"> Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na&nbsp;educação infantil, com foco na construção de práticas antirracistas. A partir do&nbsp;Pensamento de Design, o&nbsp;projeto propõe uma oficina lúdica aplicada em contexto escolar<span className="hidden md:block">, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de formação.</span></p>
           </div>
           <div className="">
             <Canetinha />

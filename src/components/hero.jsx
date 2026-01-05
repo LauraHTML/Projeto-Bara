@@ -31,8 +31,8 @@ export default function Hero() {
         <div className="bg-accent rounded-3xl p-8 md:p-4 max-w-4xl w-full">
             {/* Texto */}
             <div className="mb-8">
-              <p className="text-gray-900 text-base md:text-lg leading-relaxed m-4 text-wrap balance">
-                A Lei 10.639/03 estabelece a obrigatoriedade do ensino da história e da cultura afro-brasileira, porém sua efetivação ainda é limitada por lacunas na educação infantil. Nesse contexto, o design pode atuar como um recurso de mediação pedagógica, auxiliando na organização de conteúdos, na criação de suportes visuais acessíveis e na tradução de temas históricos, culturais e raciais em práticas educativas.
+              <p className="text-foreground text-base md:text-lg tracking-normal m-4 text-wrap balance">
+                A Lei 10.639/03 estabelece a obrigatoriedade do ensino da história e da cultura afro-brasileira,porém sua efetivação ainda é limitada por lacunas na educação infantil. Nesse&nbsp;contexto, o design pode atuar como um recurso de mediação pedagógica, auxiliando na organização de conteúdos, na criação de suportes visuais acessíveis e na tradução de&nbsp;temas históricos, culturais e raciais em práticas educativas.
               </p>
             </div>
 
