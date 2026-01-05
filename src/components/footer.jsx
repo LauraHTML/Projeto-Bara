@@ -11,6 +11,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 
+
 import { Logo } from "@/components/logo";
 
 const footerSections = [
@@ -53,11 +54,11 @@ const Footer = () => {
           <div className="flex flex-col gap-4">
 
             {footerSections.map(({ title, links }) => (
-              <div key={title} className="px-4 flex flex-row gap-4 z-11">
-                <ul className="mt-6 space-y-4 flex flex-row gap-10">
+              <div key={title} className="px-4 flex flex-col md:flex-row gap-4 z-11">
+                <ul className="mt-6 space-y-4 flex flex-col md:flex-row md:gap-10">
                   {links.map(({ title, href }) => (
-                    <li key={title}>
-                      <Link href={href} className="text-background hover:text-foreground">
+                    <li key={title} className="hover:bg-accent px-3 py-2 rounded-md m-0">
+                      <Link href={href} className="text-background">
                         {title}
                       </Link>
                     </li>
@@ -67,7 +68,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-5 text-background z-11">
+          {/* <div className="flex items-center gap-5 text-background z-11">
             <Link href="#" target="_blank">
               <TwitterIcon className="h-5 w-5" />
             </Link>
@@ -80,7 +81,7 @@ const Footer = () => {
             <Link href="#" target="_blank">
               <GithubIcon className="h-5 w-5" />
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="absolute -bottom-3 -right-10 z-0 pointer-events-none mr-20 md:block hidden">
           <Image src={"/aya-vermelho-2.png"} width={220} height={220} alt="Adinkra" />

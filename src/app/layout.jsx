@@ -7,16 +7,6 @@ import Footer from "@/components/footer";
 
 import ClientWrapper from '@/components/clientWrapper/clientWrapper';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const helvetica = localFont({
   src: './fonts/Helvetica.ttf',
   variable: "--font-helvetica",
@@ -40,19 +30,19 @@ export const metadata = {
     default: "Projeto Bará",
     template: "%s | Bará",
   },
-  description: "Aqui você coloca um resumo atrativo de até 160 caracteres sobre o que é o Projeto Bará.",
+  description: "Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na educação infantil, com foco na construção de práticas antirracistas. A partir do Pensamento de Design, o projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de formação.",
   keywords: ["Oficina escola", "Antirracismo", "Design", "Projeto Bará", "Ensinagem"],
   authors: [{ name: "Luiza Sampaio Neves", url: "https://www.linkedin.com/in/luiza-sampaio-0808/" }],
   openGraph: {
     title: "Conheça o Projeto Bará",
-    description: "Uma breve descrição que convence a pessoa a clicar no link.",
+    description: "O design trabalhando o antirracismo nas escolas através de oficinas criativas.",
     url: "https://projetobara.vercel.app",
     siteName: "Projeto Bará",
     locale: "pt_BR",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/logotipo-bara.png",
         width: 1200,
         height: 630,
         alt: "Preview do Projeto Bará",
@@ -62,13 +52,13 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Projeto Bará",
-    description: "Descrição curta para o Twitter.",
-    images: ["/og-image.jpg"],
+    description: "Bará-educação antirracista nas escolas através do design.",
+    images: ["/logotipo-bara.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/icone-bara.ico",
+    shortcut: "/logotipo-bara.png",
+    apple: "/logotipo-bara.png",
   },
 };
 

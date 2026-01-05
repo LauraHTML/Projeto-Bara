@@ -34,7 +34,7 @@ export default async function handler(req, res) {
       return res.status(400).json(error);
     }
 
-    console.log('Email enviado com sucesso!', data);
+    console.log('Email enviado com sucesso!');
     res.status(200).json(data);
     
   } catch (error) {

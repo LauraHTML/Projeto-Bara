@@ -149,6 +149,17 @@
   --tracking-normal: 0.05em;
 }
 
+::-moz-selection {
+  color: var(--primary);
+  background: var(--accent);
+}
+
+
+::selection {
+  color: var(--primary);
+  background: var(--accent);
+}
+
 .dark {
   --background: oklch(0.2223 0.0060 271.1393);
   --foreground: oklch(0.9551 0 0);

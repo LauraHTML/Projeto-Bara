@@ -21,7 +21,7 @@ export async function POST(request) {
 
     console.log('Enviando email:');
     const { data, error } = await resend.emails.send({
-      from: 'Quimex <onboarding@resend.dev>',
+      from: 'Bará <onboarding@resend.dev>',
       to: 'laura.senai03@gmail.com',
       subject: 'Nova mensagem de contato da Oficina Bará',
       react: EmailTemplate({ firstName, message, emailUser}),
@@ -32,7 +32,7 @@ export async function POST(request) {
       return NextResponse.json({ error }, { status: 500 });
     }
 
-    console.log('Email enviado com sucesso!', data);
+    console.log('Email enviado com sucesso!');
     return NextResponse.json({ data });
     
   } catch (error) {

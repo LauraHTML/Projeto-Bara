@@ -28,7 +28,7 @@ export default function Hero() {
           <Image src={"/rostinhos/rostinho.png"} width={130} height={130} alt="Rosto menina" className="ml-0 md:ml-10" />
         </div>
 
-        <div className="bg-accent flex flex-col md:flex-row h-3xl w-xl md:w-5xl justify-between items-center rounded-lg p-12 relative overflow-hidden -4" >
+        <div className="bg-accent flex flex-col md:flex-row h-3xl w-full md:w-5xl justify-between items-center rounded-lg p-12 relative overflow-hidden -4" >
           <div className="p-4 w-full md:w-1/2 flex items-center text-wrap flex-wrap">
             <p className="m-2 text-black text-xl text-wrap z-20">
               A Lei 10.639/03 estabelece a obrigatoriedade do ensino da história e da cultura afro-brasileira, porém sua efetivação ainda é limitada por lacunas na educação infantil. Nesse contexto, o design pode atuar como um recurso de mediação pedagógica, auxiliando na organização de conteúdos, na criação de suportes visuais acessíveis e na tradução de temas históricos, culturais e raciais em práticas educativas.

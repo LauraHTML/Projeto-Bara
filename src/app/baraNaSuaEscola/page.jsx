@@ -1,5 +1,6 @@
 export const metadata = {
   title: "Bara na sua escola",
+  description: "Saiba como aplicar a oficina Bará na sua escola"
 };
 
 import Image from "next/image";
@@ -170,11 +171,11 @@ export default function BaraNaSuaEscola() {
       <section>
         <CardMateriais />
       </section>
-      <section className="w-full min-h-full flex-col centralizar md:flex-row m-4 gap-10 ">
+      <section className="w-full min-h-full flex-col centralizar md:flex-row gap-10 ">
         <MateriaisGraficos />
       </section>
       <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row gap-10 ">
-        <div className="bg-[url(/textura-papel.png)] md:bg-cover contain bg-center bg-no-repeat w-6xl md:w-[40rem] h-[40rem] relative m-4">
+        <div className="bg-[url(/textura-papel.png)] md:bg-cover contain bg-center bg-no-repeat w-6xl md:w-full h-  relative m-4">
           <CarrosselComPaginacao />
         </div>
       </section>

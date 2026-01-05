@@ -14,7 +14,7 @@ export const NavigationSheet = () => {
   return (
     <Sheet>
       <VisuallyHidden>
-        <SheetTitle>Navigation Menu</SheetTitle>
+        <SheetTitle>Menu de navegação</SheetTitle>
       </VisuallyHidden>
       <SheetTrigger asChild>
         <Button variant="outline" size="icon">
