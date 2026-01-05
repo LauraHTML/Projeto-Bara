@@ -43,7 +43,7 @@ export default function BaraNaSuaEscola() {
       <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row gap-10">
         <div className="w-full max-w-2xl flex flex-col gap-6 items-center">
 
-          <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center text-center gap-5">
             <h1 className="fonte-titulo text-6xl font-bold text-primary">Método duplo diamante</h1>
             <p>Conheça sobre a estratégia de design principal para o desenvolvimento da oficina</p>
           </div>
@@ -62,8 +62,8 @@ export default function BaraNaSuaEscola() {
                   <CardDescription>introdução</CardDescription>
                   <CardTitle>Duplo Diamante</CardTitle>
                 </CardHeader>
-                <CardContent className="">
-                  <div className="py-3 z-20">
+                <CardContent className="grid gap-6">
+                  <div className="z-20">
                     <p className="">
                       O método do Duplo Diamante é uma estrutura do Pensamento de Design que organiza o processo de investigação e criação em momentos de abrir e fechar o pensamento, ajudando a compreender melhor um problema e a desenvolver soluções mais conscientes e adequadas à realidade.
                     </p>
