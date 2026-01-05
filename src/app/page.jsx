@@ -23,7 +23,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen w-full flex-col items-center sm:items-start overflow-hidden">
         <div className="bg-primary centralizar w-full h-full overflow-visible sticky top-0 z-10">
-          <div className="centralizar flex-col transition-all duration-700 w-md text-wrap overflow-hidden mt-10">
+          <div className="min-h-screen centralizar flex-col transition-all duration-700 w-md text-wrap overflow-hidden mt-10">
             <Bara />
           </div>
           <div className="static rounded-inherit shadow-2xl">

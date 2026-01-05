@@ -113,7 +113,7 @@ export default function CardMateriais() {
                                                         <CardTitle className="text-lg font-bold leading-tight group-hover:text-primary transition-colors w-full text-center px-4 pt-4 flex-shrink-0">
                                                             {material.nome}
                                                         </CardTitle>
-                                                        <CardContent className="p-4 centralizar flex-col w-100 md:w-80 flex-1 overflow-hidden bg-accent rounded-xl min-h-64">
+                                                        <CardContent className="p-4 centralizar flex-col w-full md:w-80 flex-1 overflow-hidden bg-accent rounded-xl min-h-64">
                                                             <Image src={material.imagem} width={material.tamanho} height={material.tamanho} alt={material.altImagem} className="max-w-full h-auto object-contain" />
                                                         </CardContent>
                                                     </Card>

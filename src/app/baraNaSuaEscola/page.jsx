@@ -62,9 +62,9 @@ export default function BaraNaSuaEscola() {
                   <CardDescription>introdução</CardDescription>
                   <CardTitle>Duplo Diamante</CardTitle>
                 </CardHeader>
-                <CardContent className="grid gap-6">
-                  <div className="flex-wrap py-3 z-20">
-                    <p className="text-wrap">
+                <CardContent className="">
+                  <div className="py-3 z-20">
+                    <p className="">
                       O método do Duplo Diamante é uma estrutura do Pensamento de Design que organiza o processo de investigação e criação em momentos de abrir e fechar o pensamento, ajudando a compreender melhor um problema e a desenvolver soluções mais conscientes e adequadas à realidade.
                     </p>
                   </div>

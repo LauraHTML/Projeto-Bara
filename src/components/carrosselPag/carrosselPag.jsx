@@ -38,7 +38,7 @@ export default function CarrosselComPaginacao() {
       id: 1,
       caminho: "/fotos/sala-de-aula.png",
       altImagem: "Fotos da turma participante da oficina Bará",
-      tamanho: "650"
+      tamanho: "850"
     },
     {
       id: 2,
@@ -62,7 +62,7 @@ export default function CarrosselComPaginacao() {
       id: 5,
       caminho: "/fotos/criancas-desenhando.png",
       altImagem: "Crianças desenhando na oficina",
-      tamanho: "250"
+      tamanho: "650"
     }
   ]
 
@@ -76,13 +76,13 @@ export default function CarrosselComPaginacao() {
               {imagens.map((imagem) => (
                 <CarouselItem key={imagem.id}>
                   <Card className="bg-transparent border-0 p-2 sm:p-3">
-                    <CardContent className="flex items-center justify-center p-2 sm:p-4 md:p-6">
+                    <CardContent className="flex items-center justify-center p-4">
                       <Image
                         src={imagem.caminho}
                         width={imagem.tamanho}
                         height={300}
                         alt={imagem.altImagem}
-                        className="w-xl h-auto md:h-90 max-h-96 object-contain"
+                        className="w-xl h-auto md:h-200 max-h-96 object-contain"
                         priority={imagem.id === 1}
                       />
                     </CardContent>
