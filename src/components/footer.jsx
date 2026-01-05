@@ -59,8 +59,9 @@ const Footer = () => {
                   {links.map(({ title, href }) => (
                     <li key={title} className="hover:bg-accent px-3 py-2 rounded-md m-0">
                       <Link href={href} className="text-background">
-                        {title}
-                      </Link>
+  {/* Se title não existir, vai escrever "VAZIO" em vermelho */}
+  {title ? title : <span style={{color: 'red'}}>TEXTO VAZIO</span>}
+</Link>
                     </li>
                   ))}
                 </ul>
@@ -84,7 +85,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="absolute -bottom-3 -right-10 z-0 pointer-events-none mr-20 md:block hidden">
-          <Image src={"/aya-vermelho-2.png"} width={220} height={220} alt="Adinkra aya vermelho" />
+          <Image src={"/AYA-vermelho-2.png"} width={220} height={220} alt="Adinkra aya vermelho" />
         </div>
       </div>
     </footer>
