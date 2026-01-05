@@ -29,10 +29,10 @@ export default function BaraNaSuaEscola() {
   return (<>
     <main className="relative overflow-hidden flex flex-col gap-5">
       <section className="min-h-screen w-full flex-col centralizar md:flex-row md:gap-10 gap-3">
-        <div className="flex flex-col items-start gap-3 w-md wrap-break-word">
-          <h1 className="fonte-titulo text-6xl text-primary">Educação e&nbsp;a&nbsp;luta antirracista</h1>
+        <div className="flex flex-col items-start gap-3 md:w-md w-full p-4">
+          <h1 className="fonte-titulo text-5xl md:text-6xl text-primary">Educação e&nbsp;a&nbsp;luta antirracista</h1>
           {/* <Image src={"/titulos/educacao-luta.png"} alt="Educação e luta antirracista" height={500} width={500} className="rounded-2xl" /> */}
-          <p className="m p-3">A oficina Bará propõe uma abordagem prática e interativa  para a aplicação do Pensamento de Design no meio educacional debatendo o antirracismo</p>
+          <p className="p-0 md:p-3">A oficina Bará propõe uma abordagem prática&nbsp;e&nbsp;interativa para a aplicação do&nbsp;Pensamento&nbsp;de Design no meio educacional debatendo o&nbsp;antirracismo</p>
         </div>
         <div className="mt-10">
           <Image src={"/fotos/foto-turma-1.png"} alt="foto da turma" height={400} width={600} className="rounded-2xl" />
@@ -49,11 +49,11 @@ export default function BaraNaSuaEscola() {
           </div>
           <Tabs defaultValue="oquee" className="w-full">
             <TabsList >
-              <TabsTrigger value="oquee">O que é</TabsTrigger>
-              <TabsTrigger value="descobrir">Descobrir</TabsTrigger>
-              <TabsTrigger value="definir">Definir</TabsTrigger>
-              <TabsTrigger value="desenvolver">Desenvolver</TabsTrigger>
-              <TabsTrigger value="entregar">Entregar</TabsTrigger>
+              <TabsTrigger value="oquee"><span className="block md:hidden">1-</span>O que é</TabsTrigger>
+              <TabsTrigger value="descobrir"><span className="block md:hidden">2-</span>Descobrir</TabsTrigger>
+              <TabsTrigger value="definir"><span className="block md:hidden">3-</span>Definir</TabsTrigger>
+              <TabsTrigger value="desenvolver"><span className="block md:hidden">4-</span>Desenvolver</TabsTrigger>
+              <TabsTrigger value="entregar"><span className="block md:hidden">5-</span>Entregar</TabsTrigger>
             </TabsList>
 
             <TabsContent value="oquee" className="w-full">
@@ -65,7 +65,7 @@ export default function BaraNaSuaEscola() {
                 <CardContent className="grid gap-6">
                   <div className="z-20">
                     <p className="">
-                      O método do Duplo Diamante é uma estrutura do Pensamento de Design que organiza o processo de investigação e criação em momentos de abrir e fechar o pensamento, ajudando a compreender melhor um problema e a desenvolver soluções mais conscientes e adequadas à realidade.
+                      O método do Duplo Diamante é uma estrutura do Pensamento de Design que&nbsp;organiza o processo de investigação e criação em momentos de abrir e fechar o pensamento, ajudando a compreender melhor um problema e a desenvolver soluções mais conscientes e adequadas à&nbsp;realidade.
                     </p>
                   </div>
                 </CardContent>
@@ -81,7 +81,7 @@ export default function BaraNaSuaEscola() {
                 <CardContent className="grid gap-6">
                   <div className="py-3 z-20">
                     <p>
-                      O objetivo dessa etapa é a construção da base do projeto através da pesquisa e compreensão do problema apresentado.
+                      O objetivo dessa etapa é a construção da&nbsp;base do projeto através da pesquisa e&nbsp;compreensão do problema&nbsp;apresentado.
                     </p>
                   </div>
                   <div className="absolute bottom-10 -right-10 z-0 opacity-80 pointer-events-none">
@@ -101,11 +101,7 @@ export default function BaraNaSuaEscola() {
                 <CardContent className="grid gap-6">
                   <div className="py-3 z-20">
                     <p>
-                      Atenção à caminhos
-                      específicos e
-                      estratégicos tornando
-                      claro o que deve ser
-                      resolvido.
+                      Atenção à caminhos específicos e&nbsp;estratégicos tornando claro o que deve ser resolvido.
                     </p>
                   </div>
                   <div className="absolute bottom-10 -right-10 z-0 opacity-80 pointer-events-none">
@@ -128,7 +124,7 @@ export default function BaraNaSuaEscola() {
                     <p>
                       Geração de soluções
                       e ideias através de
-                      estratégias de criação.
+                      estratégias de&nbsp;criação.
                     </p>
                   </div>
                   <div className="absolute bottom-10 -right-10 z-0 opacity-80 pointer-events-none">
@@ -153,8 +149,7 @@ export default function BaraNaSuaEscola() {
                     <p>
                       Compartilhamento
                       das descobertas e
-                      apresentação das
-                      soluções criadas.
+                      apresentação das&nbsp;soluções criadas.
                     </p>
                   </div>
                   <div className="absolute bottom-10 -right-10 z-0 opacity-80 pointer-events-none">
@@ -176,7 +171,7 @@ export default function BaraNaSuaEscola() {
         <MateriaisGraficos />
       </section>
       <section className="w-full min-h-full flex flex-col items-center justify-center md:flex-row gap-10 ">
-        <div className="bg-[url(/textura-papel.png)] md:bg-cover contain bg-center bg-no-repeat w-6xl md:w-full h-  relative m-4">
+        <div className="bg-[url(/textura-papel.png)] md:bg-cover contain bg-center bg-no-repeat w-6xl md:w-6xl relative m-4">
           <CarrosselComPaginacao />
         </div>
       </section>

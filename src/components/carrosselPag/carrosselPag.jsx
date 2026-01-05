@@ -68,9 +68,9 @@ export default function CarrosselComPaginacao() {
 
   return (
     <div className="w-full flex items-center justify-center py-8 sm:py-12 md:py-16 px-4">
-      <div className="flex flex-col items-center justify-center gap-3 sm:gap-7 mt-20 md:m-0">
+      <div className="flex flex-col items-center justify-center gap-3 sm:gap-7 mt-20 md:m-0 w-full">
         <h1 className="fonte-titulo text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-secondary text-wrap">Resultados da oficina</h1>
-        <div className="w-6xl md:max-w-xl">
+        <div className="w-full max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-5xl">
           <Carousel setApi={setApi} className="w-full">
             <CarouselContent>
               {imagens.map((imagem) => (
@@ -82,7 +82,7 @@ export default function CarrosselComPaginacao() {
                         width={imagem.tamanho}
                         height={300}
                         alt={imagem.altImagem}
-                        className="w-xl h-auto md:h-200 max-h-96 object-contain"
+                        className="w-full h-auto max-h-96 md:max-h-[500px] lg:max-h-[600px] object-contain"
                         priority={imagem.id === 1}
                       />
                     </CardContent>
@@ -90,8 +90,8 @@ export default function CarrosselComPaginacao() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious variant="default" />
+            <CarouselNext variant="default" />
           </Carousel>
         </div>
         <div className="mt-4 flex items-center justify-center gap-2 flex-wrap">

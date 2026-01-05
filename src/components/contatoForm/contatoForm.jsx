@@ -115,7 +115,7 @@ export default function ContatoForm() {
                     />
                 </div>
 
-                <Button type="submit" disabled={loading}>{loading ? 'Enviando...' : 'Enviar Mensagem'}</Button>
+                <Button size={"lg"} variant={"CTA"} type="submit" disabled={loading}>{loading ? 'Enviando...' : 'Enviar Mensagem'}</Button>
                 {status === 'success' && (<p style={{ color: 'green' }}>✓ Email enviado com sucesso!</p>)}
 
                 {status === 'error' && (<p style={{ color: 'red' }}>✗ Erro ao enviar email. Tente novamente.</p>)}

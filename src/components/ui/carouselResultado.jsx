@@ -110,7 +110,7 @@ function CarouselContent({
     <div
       ref={carouselRef}
       className="overflow-hidden"
-      data-slot="carousel-content">
+      data-slot="carousel-content ">
       <div
         className={cn(
           "flex gap-3",

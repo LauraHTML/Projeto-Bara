@@ -106,14 +106,14 @@ export default function CardMateriais() {
                                         {etapa.materiais.map((material) => (
                                             <CarouselItem
                                                 key={material.id}
-                                                className="md:pl-2 md:basis-1/2 flex-1"
+                                                className="basis-full sm:basis-1/2 md:basis-1/2 pl-2 md:pl-4"
                                             >
                                                 <div className="flex flex-col h-full w-full">
                                                     <Card className="h-full w-full min-h-96 bg-card/80 backdrop-blur-sm shadow-xl items-center md:items-start hover:shadow-2xl hover:border-primary/30 border-0 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-500 group flex flex-col">
                                                         <CardTitle className="text-lg font-bold leading-tight group-hover:text-primary transition-colors w-full text-center px-4 pt-4 flex-shrink-0">
                                                             {material.nome}
                                                         </CardTitle>
-                                                        <CardContent className="p-4 centralizar flex-col w-full md:w-80 flex-1 overflow-hidden bg-accent rounded-xl min-h-64">
+                                                        <CardContent className="p-4 centralizar flex-col w-full flex-1 overflow-hidden bg-accent rounded-xl min-h-64">
                                                             <Image src={material.imagem} width={material.tamanho} height={material.tamanho} alt={material.altImagem} className="max-w-full h-auto object-contain" />
                                                         </CardContent>
                                                     </Card>
