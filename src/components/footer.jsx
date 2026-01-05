@@ -84,7 +84,7 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="absolute -bottom-3 -right-10 z-0 pointer-events-none mr-20 md:block hidden">
-          <Image src={"/aya-vermelho-2.png"} width={220} height={220} alt="Adinkra" />
+          <Image src={"/aya-vermelho-2.png"} width={220} height={220} alt="Adinkra aya vermelho" />
         </div>
       </div>
     </footer>
