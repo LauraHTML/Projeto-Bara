@@ -9,7 +9,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <nav className="h-16 bg-primary sticky top-0 z-40 shadow-md">
-      <div className="h-full flex items-center justify-between max-w-(--breakpoint-4xl) mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="h-full flex items-center justify-between max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-12">
           <Link href={"/"}>
             <Logo />
