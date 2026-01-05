@@ -22,7 +22,7 @@ export const NavMenu = (props) => (
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
-        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+        <NavigationMenuLink asChild>
           <Link className="text-background"  href="/contato">Fale conosco</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
