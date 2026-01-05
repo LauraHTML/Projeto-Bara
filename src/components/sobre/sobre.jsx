@@ -23,8 +23,8 @@ export default function Sobre() {
           <Lapis />
           <div className="md:w-3xl w-xs text-center text-wrap balance">
             {/* <Image src="/educacao.png" width={500} height={500} alt="O design e a educação para escolas antirracistas" /> */}
-            <p className="fonte-titulo text-2xl md:text-2xl font-light text-foreground"> Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na&nbsp;educação infantil, com foco na construção de práticas antirracistas. A partir do&nbsp;Pensamento de&nbsp;Design, o&nbsp;projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de&nbsp;formação.</p>
-            <p className="block md:hidden">Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na&nbsp;educação infantil, com foco na construção de práticas antirracistas. A partir do&nbsp;Pensamento de Design, o&nbsp;projeto propõe uma oficina lúdica aplicada em contexto escolar.</p>
+            <p className="hidden md:block fonte-titulo text-2xl md:text-2xl font-light text-foreground"> Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na&nbsp;educação infantil, com foco na construção de práticas antirracistas. A partir do&nbsp;Pensamento de&nbsp;Design, o&nbsp;projeto propõe uma oficina lúdica aplicada em contexto escolar, convidando crianças e educadores a refletirem sobre identidade, diversidade e convivência desde os primeiros anos de&nbsp;formação.</p>
+            <p className="block md:hidden text-2xl">Bará é um projeto que investiga como o design pode atuar como ferramenta de transformação social na&nbsp;educação infantil, com foco na construção de práticas antirracistas. A partir do&nbsp;Pensamento de Design, o&nbsp;projeto propõe uma oficina lúdica aplicada em contexto escolar.</p>
           </div>
           <div className="">
             <Canetinha />
