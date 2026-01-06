@@ -11,7 +11,7 @@ export default function AplicacaoEscola(){
         <p className="fonte-titulo text-2xl text-center text-secondary font-bold">Veja como aplicar a oficina em sua sala de aula</p>
         <Button variant="CTA" size={"lg"}>
             <Link href={"/baraNaSuaEscola"}>
-            <p>Quero aplicar</p>
+                Quero aplicar
             </Link>
         </Button>
         <div className="flex flex-col items-center gap-4 h-2xl w-auto rounded-2xl relative m-4">

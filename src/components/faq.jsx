@@ -34,7 +34,7 @@ const FAQ = () => {
 
   return (
     <div className="bg-primary min-h-auto flex flex-col items-center justify-center px-6 py-12">
-      <div className="w-full">
+      <div className="max-w-4xl w-full">
 
         <div className="mt-6 w-full grid gap-x-10 py-7 px-10">
           <Accordion

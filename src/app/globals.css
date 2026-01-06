@@ -215,6 +215,8 @@
   --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
 }
 
+/* cursor (: */
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -224,6 +226,23 @@
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
     font-family: 'Helvetica', sans-serif;
+
+    cursor: url('/cursors/arrow.png'), auto;
+    
+    a, button {
+    cursor: url('/cursors/pointer.png'), pointer;
+    }
+
+    /* Quando seleciona texto */
+    p, span, input, textarea {
+    cursor: url('/cursors/text.png'), text;
+    }
+
+    /* Quando arrasta algo */
+    .draggable {
+    cursor: url('/cursors/grab.png'), grab;
+    }
+
   }
 
   h1,
