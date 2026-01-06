@@ -33,14 +33,14 @@ const FAQ = () => {
   const [value, setValue] = useState();
 
   return (
-    <div className="bg-primary min-h-auto w-full flex items-center justify-center px-6 py-12">
+    <div className="bg-primary min-h-auto flex flex-col items-center justify-center px-6 py-12">
       <div className="w-full">
 
         <div className="mt-6 w-full grid gap-x-10 py-7 px-10">
           <Accordion
             type="single"
             collapsible
-            className="w-full"
+            className="w-3xl"
             value={value}
             onValueChange={setValue}>
             {faq.slice(0, 5).map(({ pergunta, resposta }, index) => (
@@ -56,7 +56,7 @@ const FAQ = () => {
                       className="h-5 w-5 shrink-0 text-accent-foreground transition-transform duration-200" />
                   </AccordionPrimitive.Trigger>
                 </AccordionPrimitive.Header>
-                <AccordionContent className="text-base text-accent-foreground text-pretty">
+                <AccordionContent className="text-base text-accent-foreground text-pretty py-6">
                  <p>{resposta}</p> 
                 </AccordionContent>
               </AccordionItem>

@@ -44,7 +44,9 @@ export default function Home() {
           <Sobre />
           <AplicacaoEscola />
         </section>
-        <FAQ />
+        <section className='bg-primary w-full flex items-center justify-center px-4'>
+          <FAQ />
+        </section>
       </main>
     </>
   );
