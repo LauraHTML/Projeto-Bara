@@ -2,9 +2,11 @@ import { EmailTemplate } from "@/components/templateEmail/email"
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request) { 
+   const { Resend } = await import('resend')
+  const resend = new Resend(process.env.RESEND_API_KEY)
+
   try {
     //Pegar os dados enviados
     const body = await request.json();
