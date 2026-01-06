@@ -23,7 +23,7 @@ export default function AplicacaoEscola(){
                 <Image src={"/fotos/meninos-desenho.png"} alt="foto da turma" height={250}  width={200} className="rounded-xl" />
                 </div>  
             </div>
-                <Image src={"/fotos/foto-turma-1.png"} alt="foto da turma" height={400}  width={600} className="rounded-2xl" />
+                <Image src={"/fotos/foto-turma-1.jpg"} alt="foto da turma" height={400}  width={600} className="rounded-2xl" />
         </div>
     </div>
     

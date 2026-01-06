@@ -35,7 +35,7 @@ export default function BaraNaSuaEscola() {
           <p className="p-0 md:p-3">A oficina Bará propõe uma abordagem prática&nbsp;e&nbsp;interativa para a aplicação do&nbsp;Pensamento&nbsp;de Design no meio educacional debatendo o&nbsp;antirracismo</p>
         </div>
         <div className="mt-10">
-          <Image src={"/fotos/foto-turma-1.png"} alt="foto da turma" height={400} width={600} className="rounded-2xl" />
+          <Image src={"/fotos/foto-turma-1.jpg"} alt="foto da turma" height={400} width={600} className="rounded-2xl" />
         </div>
       </section>
 
