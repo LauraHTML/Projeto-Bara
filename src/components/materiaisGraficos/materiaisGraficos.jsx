@@ -10,7 +10,7 @@ export default function MateriaisGraficos(){
 
           <div className="flex flex-col items-center text-center gap-5">
             <Image src={"/titulos/materiais-graficos.png"} width={600} height={400} alt={"Materiais gráficos"} className="max-w-full h-auto object-contain" />
-            <p className="fonte-titulo text-2xl font-normal">Os materiais gráficos são parte essencial para&nbsp;a&nbsp;realização da oficina, com eles os alunos serão colocados em posição de&nbsp;designers.</p>
+            <p className="fonte-titulo text-xl font-normal">Os materiais gráficos são parte essencial para&nbsp;a&nbsp;realização da oficina, com eles os alunos serão colocados em posição de&nbsp;designers.</p>
             <p className="text-xl">Acesse os arquivos disponíveis para a impressão:</p>
           </div>
           <div>

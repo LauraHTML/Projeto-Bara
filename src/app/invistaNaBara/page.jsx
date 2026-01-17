@@ -21,9 +21,9 @@ export default function InvistaNaBara(){
             
         </header>
 
-        <div class="card">
+        <div className="card">
             {/* <h2>Sobre o Projeto</h2>
-            <div class="sobre-projeto">
+            <div className="sobre-projeto">
                 <p>Nosso projeto visa revolucionar a educação nas escolas públicas através da tecnologia e metodologias inovadoras de ensino. Com foco no desenvolvimento integral dos alunos, buscamos proporcionar recursos modernos, capacitação de professores e infraestrutura adequada para preparar os estudantes para os desafios do século XXI.</p>
             </div> */}
         </div>

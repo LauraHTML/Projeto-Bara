@@ -50,7 +50,7 @@ const Footer = () => {
           </Link>
         </div>
         <Separator />
-        <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0 ">
+        <div className="py-8 flex flex-col-reverse sm:flex-row items-start justify-between gap-x-2 gap-y-5 px-6 xl:px-0 ">
           {/* Copyright */}
           <div className="flex flex-col gap-4">
 

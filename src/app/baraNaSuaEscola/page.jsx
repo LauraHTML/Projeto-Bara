@@ -52,8 +52,9 @@ export default function BaraNaSuaEscola() {
               <TabsTrigger value="oquee"><span className="block md:hidden">1-</span>O que é</TabsTrigger>
               <TabsTrigger value="descobrir"><span className="block md:hidden">2-</span>Descobrir</TabsTrigger>
               <TabsTrigger value="definir"><span className="block md:hidden">3-</span>Definir</TabsTrigger>
+              
               <TabsTrigger value="desenvolver"><span className="block md:hidden">4-</span>Desenvolver</TabsTrigger>
-              <TabsTrigger value="entregar"><span className="block md:hidden">5-</span>Entregar</TabsTrigger>
+              <TabsTrigger className={"md:m-0 ml-9"} value="entregar"><span className="block md:hidden">5-</span>Entregar</TabsTrigger>
             </TabsList>
 
             <TabsContent value="oquee" className="w-full">

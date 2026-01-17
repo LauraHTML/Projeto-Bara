@@ -40,7 +40,7 @@ const FAQ = () => {
           <Accordion
             type="single"
             collapsible
-            className="w-3xl"
+            className="w-xs md:w-xl lg:w-3xl"
             value={value}
             onValueChange={setValue}>
             {faq.slice(0, 5).map(({ pergunta, resposta }, index) => (

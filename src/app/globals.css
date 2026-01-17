@@ -243,6 +243,10 @@
     cursor: url('/cursors/grab.png'), grab;
     }
 
+    .no-drop {
+    cursor: url('/cursors/errado.png'), no-drop;
+    }
+
   }
 
   h1,
