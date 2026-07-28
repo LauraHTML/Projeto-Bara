@@ -5,6 +5,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
+import { Toaster } from "sonner"
+
 import ClientWrapper from '@/components/clientWrapper/clientWrapper';
 // teste
 const helvetica = localFont({
@@ -78,6 +80,7 @@ export default function RootLayout({ children }) {
       >
           <Navbar />
           {children}
+          <Toaster />
           <Footer />
       </body>
     </html>

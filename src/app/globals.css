@@ -229,12 +229,12 @@
 
     cursor: url('/cursors/arrow.png'), auto;
     
-    a, button {
+    a, button, p, h1, h2 {
     cursor: url('/cursors/pointer.png'), pointer;
     }
 
     /* Quando seleciona texto */
-    p, span, input, textarea {
+    span, input, textarea {
     cursor: url('/cursors/text.png'), text;
     }
 

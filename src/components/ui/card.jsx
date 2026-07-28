@@ -39,7 +39,7 @@ function CardTitle({
   return (
     <div
       data-slot="card-title"
-      className={cn("leading-none font-semi bold text-center w-auto", className)}
+      className={cn("leading-none font-semi bold text-center w-auto pointer-events-auto", className)}
       {...props} />
   );
 }
