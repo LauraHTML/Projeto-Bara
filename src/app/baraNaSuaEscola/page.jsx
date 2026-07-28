@@ -49,19 +49,19 @@ export default function BaraNaSuaEscola() {
           </div>
           <Tabs defaultValue="oquee" className="tela-maior w-full">
             <TabsList className={"hidden md:grid"}>
-              <TabsTrigger value="oquee"><span className="block md:hidden">1-</span>O que é</TabsTrigger>
-              <TabsTrigger value="descobrir"><span className="block md:hidden">2-</span>Descobrir</TabsTrigger>
-              <TabsTrigger value="definir"><span className="block md:hidden">3-</span>Definir</TabsTrigger>
-              <TabsTrigger value="desenvolver"><span className="block md:hidden">4-</span>Desenvolver</TabsTrigger>
-              <TabsTrigger value="entregar"><span className="block md:hidden">5-</span>Entregar</TabsTrigger>
+              <TabsTrigger value="oquee"><span className="block md:hidden order-1">1-</span>O que é</TabsTrigger>
+              <TabsTrigger value="descobrir"><span className="block md:hidden order-2">2-</span>Descobrir</TabsTrigger>
+              <TabsTrigger value="definir"><span className="block md:hidden order-3">3-</span>Definir</TabsTrigger>
+              <TabsTrigger value="desenvolver"><span className="block md:hidden order-4">4-</span>Desenvolver</TabsTrigger>
+              <TabsTrigger value="entregar"><span className="block md:hidden order-5">5-</span>Entregar</TabsTrigger>
             </TabsList>
 
             <TabsList className={"block md:hidden"}>
-              <TabsTrigger value="oquee"><span className="block md:hidden">1-</span>O que é</TabsTrigger>
-              <TabsTrigger value="descobrir"><span className="block md:hidden">3-</span>Definir</TabsTrigger>
-              <TabsTrigger value="definir"><span className="block md:hidden">5-</span>Entregar</TabsTrigger>
-              <TabsTrigger value="desenvolver"><span className="block md:hidden">2-</span>Descobrir</TabsTrigger>
-              <TabsTrigger value="entregar"><span className="block md:hidden">4-</span>Desenvolver</TabsTrigger>
+              <TabsTrigger className="order-1" value="oquee"><span className="block md:hidden">1-</span>O que é</TabsTrigger>
+              <TabsTrigger className="order-2" value="descobrir"><span className="block md:hidden">2-</span>Definir</TabsTrigger>
+              <TabsTrigger className="order-3" value="definir"><span className="block md:hidden">3-</span>Entregar</TabsTrigger>
+              <TabsTrigger className="order-4" value="desenvolver"><span className="block md:hidden">4-</span>Descobrir</TabsTrigger>
+              <TabsTrigger className="order-5" value="entregar"><span className="block md:hidden">5-</span>Desenvolver</TabsTrigger>
             </TabsList>
 
             <TabsContent value="oquee" className="w-full">

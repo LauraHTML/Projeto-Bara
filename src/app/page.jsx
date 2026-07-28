@@ -10,8 +10,6 @@ import AplicacaoEscola from '@/components/aplicacao/aplicacao';
 import Loader from '@/components/loader';
 import Teste from '@/components/teste/teste';
 
-import { ModalInicial } from "@/components/modal";
-
 import { Figurinha01 } from "@/components/figurinhas/figurinha01";
 import { Figurinha02 } from "@/components/figurinhas/figurinha02";
 import { Figurinha03 } from "@/components/figurinhas/figurinha03";
@@ -24,7 +22,7 @@ export default function Home() {
   return (
     <>
       <main className="flex min-h-screen w-full flex-col items-center sm:items-start overflow-hidden">
-        <ModalInicial />
+       
         <div className="bg-primary centralizar w-full h-full overflow-visible sticky top-0 z-10">
           <div className="h-[30rem] md:h-screen centralizar flex-col transition-all duration-700 text-wrap overflow-hidden mt-10 w-full">
             <Bara />
