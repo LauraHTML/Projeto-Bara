@@ -11,14 +11,12 @@ import Link from "next/link";
 
 import Image from "next/image";
 
-
 import { Logo } from "@/components/logo";
 
 const footerSections = [
   {
     title: "Navegação",
     links: [
-      
       {
         title: "Conheça",
         href: "/",
@@ -36,7 +34,7 @@ const footerSections = [
         href: "/invistaNaBara",
       },
     ],
-  }
+  },
 ];
 
 const Footer = () => {
@@ -46,20 +44,31 @@ const Footer = () => {
         <div className="row-span-full xl:col-span-2 z-11">
           {/* Logo */}
           <Link href={"/"}>
-          <Image className="z-11" src="/logotipo-bara.png" width={320} height={320} alt={"Logotipo Bará"} />
+            <Image
+              className="z-11"
+              src="/logotipo-bara.png"
+              width={320}
+              height={320}
+              alt={"Logotipo Bará"}
+            />
           </Link>
         </div>
         <Separator />
         <div className="py-8 flex flex-col-reverse sm:flex-row items-start justify-between gap-x-2 gap-y-5 px-6 xl:px-0 ">
           {/* Copyright */}
           <div className="flex flex-col gap-4">
-
             {footerSections.map(({ title, links }) => (
-              <div key={title} className="px-4 flex flex-col md:flex-row gap-4 z-11">
+              <div
+                key={title}
+                className="px-4 flex flex-col md:flex-row gap-4 z-11"
+              >
                 <ul className="mt-6 space-y-4 flex flex-col md:flex-row md:gap-10">
                   {links.map(({ title, href }) => (
-                    <li key={title} className="hover:bg-accent px-3 py-2 rounded-md m-0">
-                      <Link href={href} className="text-background">
+                    <li
+                      key={title}
+                      className="text-primary-foreground hover:text-foreground hover:bg-accent px-3 py-2 rounded-md m-0"
+                    >
+                      <Link href={href} className="text">
                         {title}
                       </Link>
                     </li>
@@ -85,7 +94,12 @@ const Footer = () => {
           </div> */}
         </div>
         <div className="absolute -bottom-3 -right-10 z-0 pointer-events-none mr-20 md:block hidden">
-          <Image src={"/AYA-vermelho-2.png"} width={220} height={220} alt="Adinkra aya vermelho" />
+          <Image
+            src={"/AYA-vermelho-2.png"}
+            width={220}
+            height={220}
+            alt="Adinkra aya vermelho"
+          />
         </div>
       </div>
     </footer>
